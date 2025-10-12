@@ -27,7 +27,8 @@ class DetectorConstruction : public G4VUserDetectorConstruction
     void ConstructSDandField();
 
    private:
-       G4LogicalVolume *fScoringVolume =NULL;
+    G4LogicalVolume *fScoringVolume =NULL;
+    G4NistManager *fNistManager;
      
      
 
