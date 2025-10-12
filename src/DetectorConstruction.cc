@@ -28,8 +28,11 @@ G4VPhysicalVolume * DetectorConstruction :: Construct()
   G4Material *worldMaterial = fNistManager->FindOrBuildMaterial("G4_AIR");
 
   G4Box *solidWorld =new G4Box ("World",10*cm ,10*cm ,10*cm);
-  G4LogicalVolume *
 
+  G4LogicalVolume * logicalWorld =new G4LogicalVolume (solidWorld,worldMaterial,"World");
+  
+  auto *physWorld =new G4PVPlacement(0,G4ThreeVector(0,0,0),logicalWorld,"World",0,false,0,true); 
+  
 
 
 
