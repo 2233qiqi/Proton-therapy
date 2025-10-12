@@ -15,14 +15,21 @@
 
 class DetectorConstruction : public G4VUserDetectorConstruction
 {
-    public:
-         DetectorConstruction();
-        ~DetectorConstruction() override;
+  public:
+    DetectorConstruction();
+    ~DetectorConstruction() override;
 
-    private:
+    G4VPhysicalVolume *Construct() override;
+
+    G4LogicalVolume *GetScoringVolume() const { return fScoringVolume; }
+
+    void ConstructSDandField();
+
+   private:
+       G4LogicalVolume *fScoringVolume =NULL;
      
 
-}
+};
 
 
 
