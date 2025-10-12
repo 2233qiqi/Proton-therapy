@@ -13,9 +13,6 @@ DetectorConstruction :: ~DetectorConstruction()
 }
 
 
-
-
-
 G4VPhysicalVolume * DetectorConstruction :: Construct()
 {
   G4bool checkOverlaps = true;
