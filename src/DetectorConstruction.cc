@@ -26,14 +26,15 @@ G4VPhysicalVolume * DetectorConstruction :: Construct()
   fNistManager->FindOrBuildMaterial("G4_AIR");
   fNistManager->FindOrBuildMaterial("G4_Water");
   G4Material *worldMaterial = fNistManager->FindOrBuildMaterial("G4_AIR");
+  G4Material *modleMaterial = fNistManager->FindMaterial("G4_Water");
 
-  G4Box *solidWorld =new G4Box ("World",10*cm ,10*cm ,10*cm);
-
-  G4LogicalVolume * logicalWorld =new G4LogicalVolume (solidWorld,worldMaterial,"World");
+  G4Box *solidWorld = new G4Box ("World",10*cm ,10*cm ,10*cm);
+  G4LogicalVolume * logicalWorld = new G4LogicalVolume (solidWorld,worldMaterial,"World");
+  auto *physWorld = new G4PVPlacement(0,G4ThreeVector(0,0,0),logicalWorld,"World",0,false,0,true); 
   
-  auto *physWorld =new G4PVPlacement(0,G4ThreeVector(0,0,0),logicalWorld,"World",0,false,0,true); 
+  auto *solidModle = new G4Box("Modle",4*cm,4*cm,4*cm);
+  auto *logicalModle = new G4LogicalVolume(solidModle,modleMaterial,"Modle");
   
-
 
 
 
