@@ -8,11 +8,11 @@
 #include "G4SystemOfUnits.hh"
 #include "G4VUserPrimaryGeneratorAction.hh"
 
-class PrimaryGenerator : public G4VUserPrimaryGeneratorAction
+class PrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction
 {
   public:
-    PrimaryGenerator();
-    virtual ~PrimaryGenerator();
+    PrimaryGeneratorAction();
+    virtual ~PrimaryGeneratorAction();
     virtual void GeneratePrimaries(G4Event *);
 
   private:

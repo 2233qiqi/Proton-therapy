@@ -7,16 +7,16 @@
 #include "G4SystemOfUnits.hh"
 #include "G4VUserPrimaryGeneratorAction.hh"
 
-PrimaryGenerator :: PrimaryGenerator() : G4VUserPrimaryGeneratorAction()
+PrimaryGeneratorAction :: PrimaryGeneratorAction() : G4VUserPrimaryGeneratorAction()
 {
     fGPS->~G4GeneralParticleSource();
 } 
 
-void PrimaryGenerator::GeneratePrimaries(G4Event *event)
+void PrimaryGeneratorAction::GeneratePrimaries(G4Event *event)
 {
     fGPS->GeneratePrimaryVertex(event);
 }
-PrimaryGenerator::~PrimaryGenerator()
+PrimaryGeneratorAction::~PrimaryGeneratorAction()
 {
     delete fGPS;
 }

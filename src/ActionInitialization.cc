@@ -16,7 +16,7 @@ void ActionInitialization::BuildForMaster() const
 
 void ActionInitialization::Build() const
 {
-  SetUserAction(new PrimaryGenerator());
+  SetUserAction(new PrimaryGeneratorAction());
 
   auto runAction = new RunAction;
   SetUserAction(runAction);
