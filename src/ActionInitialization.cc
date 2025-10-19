@@ -50,7 +50,6 @@ void ActionInitialization::DefineScorers() const
 }
 
 
-//....oooOOO0OOooo........oooOOO0OOooo........oooOOO0OOooo........oooOOO0OOooo......
 
 void ActionInitialization::BuildForMaster() const
 {
@@ -58,7 +57,6 @@ void ActionInitialization::BuildForMaster() const
     SetUserAction(runAction);
 }
 
-//....oooOOO0OOooo........oooOOO0OOooo........oooOOO0OOooo........oooOOO0OOooo......
 
 void ActionInitialization::Build() const
 {
