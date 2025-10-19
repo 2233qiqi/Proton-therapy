@@ -1,0 +1,3 @@
+/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/Proton-therapy.dir
+/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/edit_cache.dir
+/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/rebuild_cache.dir
