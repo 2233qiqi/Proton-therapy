@@ -4,12 +4,19 @@
 #include "EventAction.hh"
 #include "SteppingAction.hh"
 
+
+#include "G4UserRunAction.hh"
+#include "G4UserEventAction.hh"
+#include "G4UserSteppingAction.hh"
+
 #include "G4MultiFunctionalDetector.hh"
 #include "G4VPrimitiveScorer.hh"
 #include "G4PSEnergyDeposit.hh"
 #include "G4SDManager.hh"
 #include "DetectorConstruction.hh"
-
+#include "G4LogicalVolume.hh"
+#include "G4SystemOfUnits.hh"
+#include "G4ios.hh"
 
 
 ActionInitialization::ActionInitialization(DetectorConstruction* det)
@@ -53,20 +60,26 @@ void ActionInitialization::DefineScorers() const
 
 void ActionInitialization::BuildForMaster() const
 {
-    G4VUserRunAction* runAction = new RunAction(fDetConstruction, nullptr);
+    // G4VUserRunAction 现在已被定义
+    G4UserRunAction* runAction = new RunAction(fDetConstruction, nullptr);
     SetUserAction(runAction);
 }
 
 
 void ActionInitialization::Build() const
 {
+    // PrimaryGeneratorAction (调用需要匹配 PrimaryGeneratorAction.hh 的新签名)
     SetUserAction(new PrimaryGeneratorAction(fDetConstruction)); 
 
-    G4VUserRunAction* runAction = new RunAction(fDetConstruction, nullptr);
+    
+    G4UserRunAction* runAction = new RunAction(fDetConstruction, nullptr);
     SetUserAction(runAction);
 
-    G4VUserEventAction* eventAction = new EventAction();
+    // G4VUserEventAction 现在已被定义
+    // EventAction (调用需要匹配 EventAction.hh 的新签名)
+    G4UserEventAction* eventAction = new EventAction();
     SetUserAction(eventAction);
 
+    // G4VUserSteppingAction 现在已被定义
     SetUserAction(new SteppingAction());
 }
