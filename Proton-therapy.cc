@@ -1,87 +1,78 @@
-#include <iostream>
-#include <fstream>
-#include <string>
-
-#include "G4RunManager.hh"
+#include "G4RunManagerFactory.hh"
 #include "G4UImanager.hh"
 #include "G4UIExecutive.hh"
-#include "G4VisManager.hh"
+#include "G4SteppingVerbose.hh"
 #include "G4VisExecutive.hh"
-#include "G4NuclideTable.hh"
-
 #include "DetectorConstruction.hh"
+#include "QBBC.hh"
 #include "ActionInitialization.hh"
+#include "G4TScoreNtupleWriter.hh"
+#include "G4AnalysisManager.hh"
 #include "PhysicsList.hh"
 
 int main(int argc, char **argv)
 {
-    
-    std::ofstream logfile("run.log");
-    G4cout.rdbuf(logfile.rdbuf());
-    
     G4UIExecutive *ui = nullptr;
     if (argc == 1)
     {
+        // If no arguments are provided, create a UI executive
         ui = new G4UIExecutive(argc, argv);
     }
 
-    auto *runManager = new G4RunManager;
-
-    runManager->SetUserInitialization(new PhysicsList());
-    runManager->SetUserInitialization(new DetectorConstruction());
-    runManager->SetUserInitialization(new ActionInitialization());
-
+    G4int precision = 4;
+    G4SteppingVerbose::UseBestUnit(precision);
+    // 初始化计分器写入器（必须在主线程）
+    G4TScoreNtupleWriter<G4AnalysisManager> scoreNtupleWriter;
+    scoreNtupleWriter.SetVerboseLevel(1);
+    scoreNtupleWriter.SetNtupleMerging(true); // 启用多线程合并（仅ROOT支持）
+    // construct the default run manager
+    auto runManager = G4RunManagerFactory::CreateRunManager(G4RunManagerType::Default);
+    // set mandatory initialization classes
+    runManager->SetUserInitialization(new DetectorConstruction);
+    auto physicsList = new PhysicsList;
+    //auto physicsList = new QBBC; // Use QBBC physics list
+    physicsList->SetVerboseLevel(1);
+    auto detConstruction = new DetectorConstruction();
+    runManager->SetUserInitialization(detConstruction);
+    runManager->SetUserInitialization(physicsList);
+    runManager->SetUserInitialization(new ActionInitialization(detConstruction));
+    // initialize G4 kernel
     runManager->Initialize();
 
-    G4VisManager *visManager = new G4VisExecutive("Quiet");
+    // auto visManager = new G4VisExecutive(argc, argv);
+    //  Constructors can also take optional arguments:
+    //  - a graphics system of choice, eg. "OGL"
+    //  - and a verbosity argument - see /vis/verbose guidance.
+    auto visManager = new G4VisExecutive(argc, argv, "OPGLQt", "Quiet");
+    // auto visManager = new G4VisExecutive("Quiet");
     visManager->Initialize();
 
-    G4UImanager *uiManager = G4UImanager::GetUIpointer();
-   
-    if(argc == 4)
+    // Get the pointer to the User Interface manager
+    auto UImanager = G4UImanager::GetUIpointer();
+
+    // Process macro or start UI session
+    //
+    if (!ui)
     {
-        int particle_count=std::stoi(argv[1]);
-        std::string particle_type = argv[2];
-        std::string particle_direction = argv[3];
-        
-        std::cout << "Running in batch mode with " << particle_count 
-        <<"  and particle_type  "<<particle_type
-        <<"  and particle_direction  "<<particle_direction
-        <<std::endl;
-     //设置粒子类别
-       G4String particleCmd = "/gps/particle " + particle_type;
-       uiManager->ApplyCommand(particleCmd);
-     //判断粒子方向
-       if (particle_direction == "iso")
-       {
- 
-        uiManager->ApplyCommand("/gps/ang/type iso");
-   
-       }
-       else
-       {
-        G4String directionCmd = "/gps/direction " + particle_direction;
-        uiManager->ApplyCommand(directionCmd);
-    
-        uiManager->ApplyCommand("/gps/ang/type direction");
-       }
-     //运行对应的宏文件
-        uiManager->ApplyCommand("/control/execute run_particle.mac"); 
-
-         G4String beamCmd = "/run/beamOn " + std::to_string(particle_count);
-            uiManager->ApplyCommand(beamCmd);
+        // batch mode
+        G4String command = "/control/execute ";
+        G4String fileName = argv[1];
+        UImanager->ApplyCommand(command + fileName);
     }
-
     else
     {
-        std::cerr << "\nERROR: Incorrect number of arguments. Expected 3, got " << argc - 1 << ".\n";
-        std::cerr << "Usage: ./exampleB1  <N_events> <ParticleType> \"<Dir X Y Z>\"\n";
-        std::cerr << "Example: ./exampleB1 10000 gamma \"0 0 1\"\n" << std::endl;
-        
+        // interactive mode
+        UImanager->ApplyCommand("/control/execute init_vis.mac");
+        ui->SessionStart();
+        delete ui;
     }
+
+    // Job termination
+    // Free the store: user actions, physics_list and detector_description are
+    // owned and deleted by the run manager, so they should not be deleted
+    // in the main() program !
 
     delete visManager;
     delete runManager;
-
     return 0;
 }

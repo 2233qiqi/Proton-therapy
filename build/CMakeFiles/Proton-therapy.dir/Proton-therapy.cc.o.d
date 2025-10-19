@@ -1,7 +1,12 @@
 CMakeFiles/Proton-therapy.dir/Proton-therapy.cc.o: \
  /home/qiqi/geant4/Proton-therapy/Proton-therapy.cc \
- /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
- /usr/include/c++/13/bits/requires_hosted.h \
+ /usr/include/stdc-predef.h \
+ /usr/local/include/Geant4/G4RunManagerFactory.hh \
+ /usr/local/include/Geant4/G4MTRunManager.hh \
+ /usr/local/include/Geant4/G4MTBarrier.hh \
+ /usr/local/include/Geant4/G4Threading.hh \
+ /usr/local/include/Geant4/G4Types.hh \
+ /usr/local/include/Geant4/G4GlobalConfig.hh /usr/include/c++/13/complex \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -12,15 +17,84 @@ CMakeFiles/Proton-therapy.dir/Proton-therapy.cc.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
- /usr/include/c++/13/pstl/pstl_config.h /usr/include/c++/13/ostream \
- /usr/include/c++/13/ios /usr/include/c++/13/iosfwd \
- /usr/include/c++/13/bits/stringfwd.h \
- /usr/include/c++/13/bits/memoryfwd.h /usr/include/c++/13/bits/postypes.h \
- /usr/include/c++/13/cwchar /usr/include/wchar.h \
+ /usr/include/c++/13/pstl/pstl_config.h \
+ /usr/include/c++/13/bits/cpp_type_traits.h \
+ /usr/include/c++/13/ext/type_traits.h /usr/include/c++/13/cmath \
+ /usr/include/c++/13/bits/requires_hosted.h /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/include/x86_64-linux-gnu/bits/time64.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+ /usr/include/c++/13/bits/std_abs.h /usr/include/stdlib.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+ /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+ /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+ /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+ /usr/include/x86_64-linux-gnu/sys/types.h \
+ /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-intn.h /usr/include/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/endianness.h \
+ /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+ /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+ /usr/include/x86_64-linux-gnu/sys/select.h \
+ /usr/include/x86_64-linux-gnu/bits/select.h \
+ /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+ /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+ /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/c++/13/bits/specfun.h \
+ /usr/include/c++/13/bits/stl_algobase.h \
+ /usr/include/c++/13/bits/functexcept.h \
+ /usr/include/c++/13/bits/exception_defines.h \
+ /usr/include/c++/13/ext/numeric_traits.h \
+ /usr/include/c++/13/bits/stl_pair.h /usr/include/c++/13/type_traits \
+ /usr/include/c++/13/bits/move.h /usr/include/c++/13/bits/utility.h \
+ /usr/include/c++/13/bits/stl_iterator_base_types.h \
+ /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
+ /usr/include/c++/13/bits/concept_check.h \
+ /usr/include/c++/13/debug/assertions.h \
+ /usr/include/c++/13/bits/stl_iterator.h \
+ /usr/include/c++/13/bits/ptr_traits.h /usr/include/c++/13/debug/debug.h \
+ /usr/include/c++/13/bits/predefined_ops.h /usr/include/c++/13/bit \
+ /usr/include/c++/13/limits /usr/include/c++/13/tr1/gamma.tcc \
+ /usr/include/c++/13/tr1/special_function_util.h \
+ /usr/include/c++/13/tr1/bessel_function.tcc \
+ /usr/include/c++/13/tr1/beta_function.tcc \
+ /usr/include/c++/13/tr1/ell_integral.tcc \
+ /usr/include/c++/13/tr1/exp_integral.tcc \
+ /usr/include/c++/13/tr1/hypergeometric.tcc \
+ /usr/include/c++/13/tr1/legendre_function.tcc \
+ /usr/include/c++/13/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/13/tr1/poly_hermite.tcc \
+ /usr/include/c++/13/tr1/poly_laguerre.tcc \
+ /usr/include/c++/13/tr1/riemann_zeta.tcc /usr/include/c++/13/sstream \
+ /usr/include/c++/13/istream /usr/include/c++/13/ios \
+ /usr/include/c++/13/iosfwd /usr/include/c++/13/bits/stringfwd.h \
+ /usr/include/c++/13/bits/memoryfwd.h /usr/include/c++/13/bits/postypes.h \
+ /usr/include/c++/13/cwchar /usr/include/wchar.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
@@ -28,51 +102,29 @@ CMakeFiles/Proton-therapy.dir/Proton-therapy.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
- /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/c++/13/exception /usr/include/c++/13/bits/exception.h \
  /usr/include/c++/13/bits/exception_ptr.h \
- /usr/include/c++/13/bits/exception_defines.h \
  /usr/include/c++/13/bits/cxxabi_init_exception.h \
  /usr/include/c++/13/typeinfo /usr/include/c++/13/bits/hash_bytes.h \
- /usr/include/c++/13/new /usr/include/c++/13/bits/move.h \
- /usr/include/c++/13/type_traits \
- /usr/include/c++/13/bits/nested_exception.h \
+ /usr/include/c++/13/new /usr/include/c++/13/bits/nested_exception.h \
  /usr/include/c++/13/bits/char_traits.h \
  /usr/include/c++/13/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h \
  /usr/include/c++/13/clocale /usr/include/locale.h \
  /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/c++/13/cctype \
- /usr/include/ctype.h /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/include/x86_64-linux-gnu/bits/time64.h \
- /usr/include/x86_64-linux-gnu/bits/endian.h \
- /usr/include/x86_64-linux-gnu/bits/endianness.h \
- /usr/include/c++/13/bits/ios_base.h /usr/include/c++/13/ext/atomicity.h \
+ /usr/include/ctype.h /usr/include/c++/13/bits/ios_base.h \
+ /usr/include/c++/13/ext/atomicity.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h \
  /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
  /usr/include/x86_64-linux-gnu/bits/sched.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
  /usr/include/x86_64-linux-gnu/bits/cpu-set.h /usr/include/time.h \
  /usr/include/x86_64-linux-gnu/bits/time.h \
  /usr/include/x86_64-linux-gnu/bits/timex.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
- /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
- /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
- /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
- /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
- /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
- /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
- /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
@@ -81,24 +133,10 @@ CMakeFiles/Proton-therapy.dir/Proton-therapy.cc.o: \
  /usr/include/c++/13/bits/allocator.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
  /usr/include/c++/13/bits/new_allocator.h \
- /usr/include/c++/13/bits/functexcept.h \
- /usr/include/c++/13/bits/cpp_type_traits.h \
  /usr/include/c++/13/bits/ostream_insert.h \
  /usr/include/c++/13/bits/cxxabi_forced.h \
- /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
- /usr/include/c++/13/bits/concept_check.h \
- /usr/include/c++/13/debug/assertions.h \
- /usr/include/c++/13/bits/stl_iterator_base_types.h \
- /usr/include/c++/13/bits/stl_iterator.h \
- /usr/include/c++/13/ext/type_traits.h \
- /usr/include/c++/13/bits/ptr_traits.h \
  /usr/include/c++/13/bits/stl_function.h \
  /usr/include/c++/13/backward/binders.h \
- /usr/include/c++/13/ext/numeric_traits.h \
- /usr/include/c++/13/bits/stl_algobase.h \
- /usr/include/c++/13/bits/stl_pair.h /usr/include/c++/13/bits/utility.h \
- /usr/include/c++/13/debug/debug.h \
- /usr/include/c++/13/bits/predefined_ops.h /usr/include/c++/13/bit \
  /usr/include/c++/13/bits/refwrap.h /usr/include/c++/13/bits/invoke.h \
  /usr/include/c++/13/bits/range_access.h \
  /usr/include/c++/13/initializer_list \
@@ -109,18 +147,8 @@ CMakeFiles/Proton-therapy.dir/Proton-therapy.cc.o: \
  /usr/include/c++/13/bits/functional_hash.h \
  /usr/include/c++/13/bits/string_view.tcc \
  /usr/include/c++/13/ext/string_conversions.h /usr/include/c++/13/cstdlib \
- /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
- /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
- /usr/include/x86_64-linux-gnu/sys/types.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h /usr/include/endian.h \
- /usr/include/x86_64-linux-gnu/bits/byteswap.h \
- /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
- /usr/include/x86_64-linux-gnu/sys/select.h \
- /usr/include/x86_64-linux-gnu/bits/select.h \
- /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
- /usr/include/alloca.h /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/include/c++/13/bits/std_abs.h /usr/include/c++/13/cstdio \
- /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+ /usr/include/c++/13/cstdio /usr/include/stdio.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
@@ -147,51 +175,13 @@ CMakeFiles/Proton-therapy.dir/Proton-therapy.cc.o: \
  /usr/include/c++/13/bits/streambuf_iterator.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h \
  /usr/include/c++/13/bits/locale_facets.tcc \
- /usr/include/c++/13/bits/basic_ios.tcc \
- /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
- /usr/include/c++/13/bits/istream.tcc /usr/include/c++/13/fstream \
- /usr/include/c++/13/bits/codecvt.h \
- /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
- /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
- /usr/include/c++/13/bits/fstream.tcc \
- /usr/local/include/Geant4/G4RunManager.hh \
- /usr/local/include/Geant4/G4Event.hh /usr/include/c++/13/set \
- /usr/include/c++/13/bits/stl_tree.h \
- /usr/include/c++/13/ext/aligned_buffer.h \
- /usr/include/c++/13/bits/node_handle.h \
- /usr/include/c++/13/bits/stl_set.h \
- /usr/include/c++/13/bits/stl_multiset.h \
- /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/map \
- /usr/include/c++/13/bits/stl_map.h \
- /usr/include/c++/13/bits/stl_multimap.h \
- /usr/local/include/Geant4/globals.hh /usr/local/include/Geant4/G4ios.hh \
- /usr/local/include/Geant4/G4Types.hh \
- /usr/local/include/Geant4/G4GlobalConfig.hh /usr/include/c++/13/complex \
- /usr/include/c++/13/cmath /usr/include/math.h \
- /usr/include/x86_64-linux-gnu/bits/math-vector.h \
- /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
- /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
- /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
- /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
- /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /usr/include/c++/13/bits/specfun.h /usr/include/c++/13/limits \
- /usr/include/c++/13/tr1/gamma.tcc \
- /usr/include/c++/13/tr1/special_function_util.h \
- /usr/include/c++/13/tr1/bessel_function.tcc \
- /usr/include/c++/13/tr1/beta_function.tcc \
- /usr/include/c++/13/tr1/ell_integral.tcc \
- /usr/include/c++/13/tr1/exp_integral.tcc \
- /usr/include/c++/13/tr1/hypergeometric.tcc \
- /usr/include/c++/13/tr1/legendre_function.tcc \
- /usr/include/c++/13/tr1/modified_bessel_func.tcc \
- /usr/include/c++/13/tr1/poly_hermite.tcc \
- /usr/include/c++/13/tr1/poly_laguerre.tcc \
- /usr/include/c++/13/tr1/riemann_zeta.tcc /usr/include/c++/13/sstream \
+ /usr/include/c++/13/bits/basic_ios.tcc /usr/include/c++/13/ostream \
+ /usr/include/c++/13/bits/ostream.tcc \
+ /usr/include/c++/13/bits/istream.tcc \
  /usr/include/c++/13/bits/sstream.tcc /usr/local/include/Geant4/tls.hh \
- /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algo.h \
+ /usr/local/include/Geant4/globals.hh /usr/local/include/Geant4/G4ios.hh \
+ /usr/include/c++/13/iostream /usr/include/c++/13/algorithm \
+ /usr/include/c++/13/bits/stl_algo.h \
  /usr/include/c++/13/bits/algorithmfwd.h \
  /usr/include/c++/13/bits/stl_heap.h \
  /usr/include/c++/13/bits/uniform_int_dist.h \
@@ -217,9 +207,16 @@ CMakeFiles/Proton-therapy.dir/Proton-therapy.cc.o: \
  /usr/include/c++/13/bits/locale_facets_nonio.h /usr/include/c++/13/ctime \
  /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h \
- /usr/include/libintl.h /usr/include/c++/13/bits/locale_facets_nonio.tcc \
+ /usr/include/libintl.h /usr/include/c++/13/bits/codecvt.h \
+ /usr/include/c++/13/bits/locale_facets_nonio.tcc \
  /usr/include/c++/13/bits/locale_conv.h \
- /usr/include/c++/13/bits/quoted_string.h /usr/include/c++/13/mutex \
+ /usr/include/c++/13/bits/quoted_string.h /usr/include/c++/13/map \
+ /usr/include/c++/13/bits/stl_tree.h \
+ /usr/include/c++/13/ext/aligned_buffer.h \
+ /usr/include/c++/13/bits/node_handle.h \
+ /usr/include/c++/13/bits/stl_map.h \
+ /usr/include/c++/13/bits/stl_multimap.h \
+ /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/mutex \
  /usr/include/c++/13/bits/chrono.h /usr/include/c++/13/ratio \
  /usr/include/c++/13/cstdint \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
@@ -227,7 +224,30 @@ CMakeFiles/Proton-therapy.dir/Proton-therapy.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
  /usr/include/c++/13/bits/parse_numbers.h \
  /usr/include/c++/13/bits/std_mutex.h \
- /usr/include/c++/13/bits/unique_lock.h \
+ /usr/include/c++/13/bits/unique_lock.h /usr/include/c++/13/chrono \
+ /usr/include/c++/13/condition_variable \
+ /usr/include/c++/13/bits/shared_ptr.h \
+ /usr/include/c++/13/bits/shared_ptr_base.h \
+ /usr/include/c++/13/bits/allocated_ptr.h \
+ /usr/include/c++/13/bits/unique_ptr.h \
+ /usr/include/c++/13/ext/concurrence.h /usr/include/c++/13/future \
+ /usr/include/c++/13/bits/atomic_base.h \
+ /usr/include/c++/13/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/13/bits/atomic_futex.h /usr/include/c++/13/atomic \
+ /usr/include/c++/13/bits/std_function.h \
+ /usr/include/c++/13/bits/std_thread.h /usr/include/c++/13/thread \
+ /usr/include/c++/13/bits/this_thread_sleep.h /usr/include/c++/13/vector \
+ /usr/include/c++/13/bits/stl_uninitialized.h \
+ /usr/include/c++/13/bits/stl_vector.h \
+ /usr/include/c++/13/bits/stl_bvector.h \
+ /usr/include/c++/13/bits/vector.tcc \
+ /usr/local/include/Geant4/G4RNGHelper.hh /usr/include/c++/13/queue \
+ /usr/include/c++/13/deque /usr/include/c++/13/bits/stl_deque.h \
+ /usr/include/c++/13/bits/deque.tcc /usr/include/c++/13/bits/stl_queue.h \
+ /usr/local/include/Geant4/G4RunManager.hh \
+ /usr/local/include/Geant4/G4Event.hh /usr/include/c++/13/set \
+ /usr/include/c++/13/bits/stl_set.h \
+ /usr/include/c++/13/bits/stl_multiset.h \
  /usr/local/include/Geant4/evtdefs.hh \
  /usr/local/include/Geant4/G4Allocator.hh \
  /usr/local/include/Geant4/G4AllocatorPool.hh \
@@ -240,10 +260,6 @@ CMakeFiles/Proton-therapy.dir/Proton-therapy.cc.o: \
  /usr/local/include/Geant4/pwdefs.hh \
  /usr/local/include/Geant4/G4HCofThisEvent.hh \
  /usr/local/include/Geant4/G4VHitsCollection.hh \
- /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
- /usr/include/c++/13/bits/stl_vector.h \
- /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc \
  /usr/local/include/Geant4/G4DCofThisEvent.hh \
  /usr/local/include/Geant4/G4VDigiCollection.hh \
  /usr/local/include/Geant4/G4TrajectoryContainer.hh \
@@ -265,26 +281,14 @@ CMakeFiles/Proton-therapy.dir/Proton-therapy.cc.o: \
  /usr/local/include/Geant4/trkdefs.hh \
  /usr/local/include/Geant4/G4LogicalVolume.hh /usr/include/c++/13/memory \
  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
- /usr/include/c++/13/bits/align.h /usr/include/c++/13/bits/unique_ptr.h \
- /usr/include/c++/13/bits/shared_ptr.h \
- /usr/include/c++/13/bits/shared_ptr_base.h \
- /usr/include/c++/13/bits/allocated_ptr.h \
- /usr/include/c++/13/ext/concurrence.h \
+ /usr/include/c++/13/bits/align.h \
  /usr/include/c++/13/bits/shared_ptr_atomic.h \
- /usr/include/c++/13/bits/atomic_base.h \
- /usr/include/c++/13/bits/atomic_lockfree_defines.h \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/local/include/Geant4/G4Region.hh \
  /usr/local/include/Geant4/G4GeomSplitter.hh \
  /usr/local/include/Geant4/geomwdefs.hh \
  /usr/local/include/Geant4/G4AutoLock.hh \
- /usr/local/include/Geant4/G4Threading.hh /usr/include/c++/13/chrono \
- /usr/include/c++/13/condition_variable /usr/include/c++/13/future \
- /usr/include/c++/13/bits/atomic_futex.h /usr/include/c++/13/atomic \
- /usr/include/c++/13/bits/std_function.h \
- /usr/include/c++/13/bits/std_thread.h /usr/include/c++/13/thread \
- /usr/include/c++/13/bits/this_thread_sleep.h \
  /usr/local/include/Geant4/G4Region.icc \
  /usr/local/include/Geant4/G4VPhysicalVolume.hh \
  /usr/local/include/Geant4/geomdefs.hh \
@@ -351,7 +355,10 @@ CMakeFiles/Proton-therapy.dir/Proton-therapy.cc.o: \
  /usr/local/include/Geant4/G4MaterialPropertiesIndex.hh \
  /usr/local/include/Geant4/G4MaterialPropertyVector.hh \
  /usr/local/include/Geant4/G4PhysicsFreeVector.hh \
- /usr/local/include/Geant4/G4PhysicsVector.hh \
+ /usr/local/include/Geant4/G4PhysicsVector.hh /usr/include/c++/13/fstream \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
+ /usr/include/c++/13/bits/fstream.tcc \
  /usr/local/include/Geant4/G4PhysicsVectorType.hh \
  /usr/local/include/Geant4/G4PhysicsVector.icc \
  /usr/local/include/Geant4/G4MaterialTable.hh \
@@ -476,12 +483,56 @@ CMakeFiles/Proton-therapy.dir/Proton-therapy.cc.o: \
  /usr/local/include/Geant4/G4RunManagerKernel.hh \
  /usr/local/include/Geant4/rundefs.hh /usr/include/c++/13/list \
  /usr/include/c++/13/bits/stl_list.h /usr/include/c++/13/bits/list.tcc \
+ /usr/local/include/Geant4/G4TaskRunManager.hh \
+ /usr/local/include/Geant4/G4TBBTaskGroup.hh \
+ /usr/local/include/Geant4/PTL/TaskGroup.hh \
+ /usr/local/include/Geant4/PTL/AutoLock.hh \
+ /usr/local/include/Geant4/PTL/ConsumeParameters.hh \
+ /usr/local/include/Geant4/PTL/Types.hh \
+ /usr/local/include/Geant4/PTL/Config.hh \
+ /usr/local/include/Geant4/PTL/JoinFunction.hh \
+ /usr/local/include/Geant4/PTL/Macros.hh /usr/include/c++/13/functional \
+ /usr/include/c++/13/unordered_map \
+ /usr/include/c++/13/bits/unordered_map.h \
+ /usr/include/c++/13/bits/hashtable.h \
+ /usr/include/c++/13/bits/hashtable_policy.h \
+ /usr/include/c++/13/bits/enable_special_members.h \
+ /usr/include/c++/13/utility /usr/include/c++/13/bits/stl_relops.h \
+ /usr/local/include/Geant4/PTL/ScopeDestructor.hh \
+ /usr/local/include/Geant4/PTL/Task.hh \
+ /usr/local/include/Geant4/PTL/VTask.hh \
+ /usr/local/include/Geant4/PTL/detail/CxxBackports.hh \
+ /usr/local/include/Geant4/PTL/ThreadData.hh \
+ /usr/local/include/Geant4/PTL/ThreadPool.hh \
+ /usr/local/include/Geant4/PTL/Threading.hh \
+ /usr/local/include/Geant4/PTL/VUserTaskQueue.hh \
+ /usr/local/include/Geant4/G4TaskGroup.hh \
+ /usr/local/include/Geant4/G4TaskManager.hh \
+ /usr/local/include/Geant4/PTL/TaskManager.hh \
+ /usr/local/include/Geant4/PTL/TaskRunManager.hh \
+ /usr/local/include/Geant4/G4ThreadPool.hh \
+ /usr/local/include/Geant4/G4VUserTaskQueue.hh /usr/include/c++/13/regex \
+ /usr/include/c++/13/bitset /usr/include/c++/13/stack \
+ /usr/include/c++/13/bits/stl_stack.h \
+ /usr/include/c++/13/bits/regex_constants.h \
+ /usr/include/c++/13/bits/regex_error.h \
+ /usr/include/c++/13/bits/regex_automaton.h \
+ /usr/include/c++/13/bits/regex_automaton.tcc \
+ /usr/include/c++/13/bits/regex_scanner.h \
+ /usr/include/c++/13/bits/regex_scanner.tcc \
+ /usr/include/c++/13/bits/regex_compiler.h \
+ /usr/include/c++/13/bits/regex_compiler.tcc \
+ /usr/include/c++/13/bits/regex.h /usr/include/c++/13/bits/regex.tcc \
+ /usr/include/c++/13/bits/regex_executor.h \
+ /usr/include/c++/13/bits/regex_executor.tcc \
  /usr/local/include/Geant4/G4UImanager.hh \
  /usr/local/include/Geant4/G4UIcommandStatus.hh \
  /usr/local/include/Geant4/G4VStateDependent.hh \
  /usr/local/include/Geant4/icomsdefs.hh \
  /usr/local/include/Geant4/G4UIExecutive.hh \
  /usr/local/include/Geant4/G4VUIshell.hh \
+ /usr/local/include/Geant4/G4SteppingVerbose.hh \
+ /usr/local/include/Geant4/G4VisExecutive.hh \
  /usr/local/include/Geant4/G4VisManager.hh \
  /usr/local/include/Geant4/G4VVisManager.hh \
  /usr/local/include/Geant4/G4GraphicsSystemList.hh \
@@ -494,7 +545,6 @@ CMakeFiles/Proton-therapy.dir/Proton-therapy.cc.o: \
  /usr/local/include/Geant4/G4Colour.hh \
  /usr/local/include/Geant4/G4Color.hh \
  /usr/local/include/Geant4/G4VisAttributes.icc \
- /usr/include/c++/13/utility /usr/include/c++/13/bits/stl_relops.h \
  /usr/local/include/Geant4/G4ModelingParameters.icc \
  /usr/local/include/Geant4/G4NullModel.hh \
  /usr/local/include/Geant4/G4VModel.hh \
@@ -561,19 +611,12 @@ CMakeFiles/Proton-therapy.dir/Proton-therapy.cc.o: \
  /usr/local/include/Geant4/G4VViewer.icc \
  /usr/local/include/Geant4/G4THitsMap.hh \
  /usr/local/include/Geant4/G4THitsCollection.hh \
- /usr/include/c++/13/unordered_map \
- /usr/include/c++/13/bits/unordered_map.h \
- /usr/include/c++/13/bits/hashtable.h \
- /usr/include/c++/13/bits/hashtable_policy.h \
- /usr/include/c++/13/bits/enable_special_members.h \
  /usr/local/include/Geant4/G4VSceneHandler.icc \
  /usr/local/include/Geant4/G4SceneList.hh \
  /usr/local/include/Geant4/G4Scene.hh \
  /usr/local/include/Geant4/G4Scene.icc \
  /usr/local/include/Geant4/G4TrajectoriesModel.hh \
  /usr/local/include/Geant4/G4VisManager.icc \
- /usr/local/include/Geant4/G4VisExecutive.hh \
- /usr/local/include/Geant4/G4VisManager.hh \
  /usr/local/include/Geant4/G4VisExecutive.icc \
  /usr/local/include/Geant4/G4HitFilterFactories.hh \
  /usr/local/include/Geant4/G4VFilter.hh \
@@ -605,14 +648,7 @@ CMakeFiles/Proton-therapy.dir/Proton-therapy.cc.o: \
  /usr/local/include/Geant4/G4UImanager.hh \
  /usr/local/include/Geant4/G4UIsession.hh \
  /usr/local/include/Geant4/G4coutDestination.hh \
- /usr/include/c++/13/functional /usr/local/include/Geant4/G4UIbatch.hh \
- /usr/local/include/Geant4/G4NuclideTable.hh \
- /usr/local/include/Geant4/G4DecayTable.hh \
- /usr/local/include/Geant4/G4VDecayChannel.hh \
- /usr/local/include/Geant4/G4IonTable.hh \
- /usr/local/include/Geant4/G4Ions.hh \
- /usr/local/include/Geant4/G4IsotopeProperty.hh \
- /usr/local/include/Geant4/G4VIsotopeTable.hh \
+ /usr/local/include/Geant4/G4UIbatch.hh \
  /home/qiqi/geant4/Proton-therapy/include/DetectorConstruction.hh \
  /usr/local/include/Geant4/G4VUserDetectorConstruction.hh \
  /usr/local/include/Geant4/G4LogicalVolume.hh \
@@ -622,9 +658,7 @@ CMakeFiles/Proton-therapy.dir/Proton-therapy.cc.o: \
  /usr/local/include/Geant4/G4NistMaterialBuilder.hh \
  /usr/local/include/Geant4/G4Pow.hh /usr/local/include/Geant4/G4Exp.hh \
  /usr/local/include/Geant4/G4SystemOfUnits.hh \
- /home/qiqi/geant4/Proton-therapy/include/ActionInitialization.hh \
- /usr/local/include/Geant4/G4VUserActionInitialization.hh \
- /home/qiqi/geant4/Proton-therapy/include/PhysicsList.hh \
+ /usr/local/include/Geant4/QBBC.hh \
  /usr/local/include/Geant4/G4VModularPhysicsList.hh \
  /usr/local/include/Geant4/G4VPhysicsConstructor.hh \
  /usr/local/include/Geant4/G4PhysicsListHelper.hh \
@@ -637,4 +671,75 @@ CMakeFiles/Proton-therapy.dir/Proton-therapy.cc.o: \
  /usr/local/include/Geant4/G4ProductionCutsTable.hh \
  /usr/local/include/Geant4/G4MaterialCutsCouple.hh \
  /usr/local/include/Geant4/G4ProductionCuts.hh \
- /usr/local/include/Geant4/G4MCCIndexConversionTable.hh
+ /usr/local/include/Geant4/G4MCCIndexConversionTable.hh \
+ /home/qiqi/geant4/Proton-therapy/include/ActionInitialization.hh \
+ /usr/local/include/Geant4/G4VUserActionInitialization.hh \
+ /usr/local/include/Geant4/G4TScoreNtupleWriter.hh \
+ /usr/local/include/Geant4/G4VScoreNtupleWriter.hh \
+ /usr/local/include/Geant4/G4TScoreNtupleWriter.icc \
+ /usr/local/include/Geant4/G4TScoreNtupleWriterMessenger.hh \
+ /usr/local/include/Geant4/G4TScoreNtupleWriterMessenger.icc \
+ /usr/local/include/Geant4/G4TScoreNtupleWriter.hh \
+ /usr/local/include/Geant4/G4UIcmdWithAString.hh \
+ /usr/local/include/Geant4/G4UIcmdWithAnInteger.hh \
+ /usr/local/include/Geant4/G4AnalysisManager.hh \
+ /usr/local/include/Geant4/G4GenericAnalysisManager.hh \
+ /usr/local/include/Geant4/G4ToolsAnalysisManager.hh \
+ /usr/local/include/Geant4/G4VAnalysisManager.hh \
+ /usr/local/include/Geant4/G4AnalysisManagerState.hh \
+ /usr/local/include/Geant4/G4AnalysisVerbose.hh \
+ /usr/local/include/Geant4/G4AnalysisUtilities.hh \
+ /usr/local/include/Geant4/G4VTBaseHnManager.hh \
+ /usr/local/include/Geant4/G4HnInformation.hh \
+ /usr/local/include/Geant4/G4BinScheme.hh \
+ /usr/local/include/Geant4/G4Fcn.hh \
+ /usr/local/include/Geant4/G4VAnalysisManager.icc \
+ /usr/local/include/Geant4/G4HnManager.hh \
+ /usr/local/include/Geant4/G4BaseAnalysisManager.hh \
+ /usr/local/include/Geant4/G4NtupleBookingManager.hh \
+ /usr/local/include/Geant4/tools/ntuple_booking \
+ /usr/local/include/Geant4/tools/cids /usr/local/include/Geant4/tools/cid \
+ /usr/local/include/Geant4/tools/typedefs \
+ /usr/local/include/Geant4/tools/forit \
+ /usr/local/include/Geant4/G4NtupleBookingManager.icc \
+ /usr/local/include/Geant4/G4VNtupleManager.hh \
+ /usr/local/include/Geant4/G4VFileManager.hh \
+ /usr/local/include/Geant4/G4BaseFileManager.hh \
+ /usr/local/include/Geant4/G4VTHnFileManager.hh \
+ /usr/local/include/Geant4/G4TH1ToolsManager.hh \
+ /usr/local/include/Geant4/G4THnToolsManager.hh \
+ /usr/local/include/Geant4/G4THnManager.hh \
+ /usr/local/include/Geant4/G4THnManager.icc \
+ /usr/local/include/Geant4/G4THnMessenger.hh \
+ /usr/local/include/Geant4/G4THnToolsManager.icc \
+ /usr/local/include/Geant4/G4THnMessenger.icc \
+ /usr/local/include/Geant4/G4Tokenizer.hh \
+ /usr/local/include/Geant4/G4TH2ToolsManager.hh \
+ /usr/local/include/Geant4/G4TH3ToolsManager.hh \
+ /usr/local/include/Geant4/G4TP1ToolsManager.hh \
+ /usr/local/include/Geant4/G4TP2ToolsManager.hh \
+ /usr/local/include/Geant4/tools/histo/h1d \
+ /usr/local/include/Geant4/tools/histo/h1 \
+ /usr/local/include/Geant4/tools/histo/b1 \
+ /usr/local/include/Geant4/tools/histo/base_histo \
+ /usr/local/include/Geant4/tools/histo/histo_data \
+ /usr/local/include/Geant4/tools/histo/axes \
+ /usr/local/include/Geant4/tools/histo/axis \
+ /usr/local/include/Geant4/tools/eqT \
+ /usr/local/include/Geant4/tools/histo/h2d \
+ /usr/local/include/Geant4/tools/histo/h2 \
+ /usr/local/include/Geant4/tools/histo/b2 \
+ /usr/local/include/Geant4/tools/histo/h3d \
+ /usr/local/include/Geant4/tools/histo/h3 \
+ /usr/local/include/Geant4/tools/histo/b3 \
+ /usr/local/include/Geant4/tools/histo/p1d \
+ /usr/local/include/Geant4/tools/histo/p1 \
+ /usr/local/include/Geant4/tools/histo/profile_data \
+ /usr/local/include/Geant4/tools/histo/p2d \
+ /usr/local/include/Geant4/tools/histo/p2 \
+ /usr/local/include/Geant4/G4ToolsAnalysisManager.icc \
+ /usr/local/include/Geant4/G4GenericAnalysisManager.icc \
+ /usr/local/include/Geant4/G4GenericFileManager.hh \
+ /usr/local/include/Geant4/G4GenericFileManager.icc \
+ /home/qiqi/geant4/Proton-therapy/include/PhysicsList.hh \
+ /usr/local/include/Geant4/G4VModularPhysicsList.hh
