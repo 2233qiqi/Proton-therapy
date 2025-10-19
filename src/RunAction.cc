@@ -51,6 +51,7 @@ void RunAction::ReadAndWriteDose(const G4Run* run)
 
     G4int nEvents = run->GetNumberOfEvent();
     outfile << "Run " << run->GetRunID() << " 共 " << nEvents << " 个事件\n";
+
     outfile.close();
 }
 

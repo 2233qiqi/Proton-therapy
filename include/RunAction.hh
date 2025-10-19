@@ -13,7 +13,7 @@ class RunAction : public G4UserRunAction
 public:
 
 RunAction(DetectorConstruction *dec,G4VAnalysisManager* man);
-G4Run *GenerateRun();
+G4Run *GenerateRun() override;
 virtual void BeginOfRunAction(const G4Run *);
 virtual void EndOfRunAction(const G4Run*);
 
