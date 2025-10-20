@@ -40,17 +40,17 @@ file(GLOB headers ${PROJECT_SOURCE_DIR}/include/*.hh)
 #----------------------------------------------------------------------------
 # Add the executable, use our local headers, and link it to the Geant4 libraries
 #
-add_executable(Proton-therapy Proton-therapy.cc ${sources} ${headers})
+add_executable(main main.cc ${sources} ${headers})
 
 #----------------------------------------------------------------------------
-target_include_directories(Proton-therapy PRIVATE
+target_include_directories(main PRIVATE
     include
     ${Geant4_INCLUDE_DIRS}
     ${ROOT_INCLUDE_DIRS}
 )
 
 #----------------------------------------------------------------------------
-target_link_libraries(Proton-therapy PRIVATE
+target_link_libraries(main PRIVATE
     ${ROOT_LIBRARIES}
     ${Geant4_LIBRARIES}
     ${TBB_LIB}

@@ -6,9 +6,6 @@
 class G4VPhysicalVolume;
 class G4LogicalVolume;
 
-namespace B1
-{
-
 
 
 class DetectorConstruction : public G4VUserDetectorConstruction
@@ -25,7 +22,7 @@ class DetectorConstruction : public G4VUserDetectorConstruction
     G4LogicalVolume* fScoringVolume = nullptr;
 };
 
-} 
+
 
 
 #endif
