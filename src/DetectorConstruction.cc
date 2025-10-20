@@ -40,11 +40,11 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
   //屏蔽材料
   G4Material* shield_mat = nist->FindOrBuildMaterial("G4_Pb");
 
-  auto solidShield = new G4Box("Shield",shield_sizeXY,shield_sizeZ);
+  auto solidShield = new G4Box("Shield",0.5*shield_sizeXY,0.5 * shield_sizeXY,0.5*shield_sizeZ);
   
-  auto logicaShield = new G4LogicalVolume(solidWorld,shield_mat,"Shield");
+  auto logicaShield = new G4LogicalVolume(solidShield,shield_mat,"Shield");
 
-  auto physShield =new G4PVPlacement(NULL,G4ThreeVector(),logicaShield,"Shield",NULL,false,0,checkOverlaps);
+  auto physShield =new G4PVPlacement(NULL,G4ThreeVector(),logicaShield,"Shield",logicWorld,false,0,checkOverlaps);
 
      return physWorld;
 }
