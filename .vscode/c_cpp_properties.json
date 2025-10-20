@@ -5,8 +5,7 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "/usr/local/include/Geant4",
-                "/home/qiqi/ROOT/root/include",
-                "${workspaceFolder}/include"
+                "/home/qiqi/ROOT/root/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
