@@ -66,7 +66,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
     return physWorld;
 }
 
-// --- Setter functions for UI commands ---
+// commands
 void DetectorConstruction::SetShieldMaterial(const G4String& materialName)
 {
     fShieldMaterialName = materialName;
