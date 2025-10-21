@@ -1,28 +1,28 @@
 #ifndef DetectorConstruction_h
-#define DetectorConstruction_h
+#define DetectorConstruction_h 1
 
 #include "G4VUserDetectorConstruction.hh"
+#include "globals.hh"
 
 class G4VPhysicalVolume;
 class G4LogicalVolume;
 
-
-
 class DetectorConstruction : public G4VUserDetectorConstruction
 {
-  public:
-    DetectorConstruction() = default;
-    ~DetectorConstruction() override = default;
+public:
+    DetectorConstruction();
+    ~DetectorConstruction() override;
 
     G4VPhysicalVolume* Construct() override;
 
-    G4LogicalVolume* GetScoringVolume() const { return fScoringVolume; }
+    void SetShieldMaterial(const G4String& materialName);
+    void SetShieldThickness(G4double thickness); 
 
-  protected:
-    G4LogicalVolume* fScoringVolume = nullptr;
+private:
+    G4LogicalVolume* fDetectorLogic; 
+
+    G4String fShieldMaterialName;
+    G4double fShieldThickness;
 };
-
-
-
 
 #endif

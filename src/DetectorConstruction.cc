@@ -1,50 +1,79 @@
 #include "DetectorConstruction.hh"
 
 #include "G4Box.hh"
-#include "G4Cons.hh"
 #include "G4LogicalVolume.hh"
-#include "G4NistManager.hh"
 #include "G4PVPlacement.hh"
+#include "G4NistManager.hh"
 #include "G4SystemOfUnits.hh"
-#include "G4Trd.hh"
+#include "G4PhysicalConstants.hh"
 
-G4VPhysicalVolume *DetectorConstruction::Construct()
+DetectorConstruction::DetectorConstruction()
+    : fDetectorLogic(nullptr),
+      fShieldMaterialName("G4_Pb"),
+      fShieldThickness(5.0 * cm)
+{}
+
+DetectorConstruction::~DetectorConstruction() = default;
+
+G4VPhysicalVolume* DetectorConstruction::Construct()
 {
-  G4NistManager* nist = G4NistManager::Instance();
-  G4double shield_sizeXY = 50 * cm, shield_sizeZ = 50 * cm;
- 
-  G4bool checkOverlaps = true;
+    G4NistManager* nist = G4NistManager::Instance();
+    G4bool checkOverlaps = true;
 
- //世界
-  G4double world_sizeXY = 1.2 * shield_sizeXY;
-  G4double world_sizeZ = 1.2 * shield_sizeZ;
-  G4Material* world_mat = nist->FindOrBuildMaterial("G4_AIR");
+    // world
+    G4double worldSize = 1.0 * m;
+    G4Material *worldmat = nist ->FindOrBuildMaterial("G4_AIR");
 
-  auto solidWorld =
-    new G4Box("World",  
-              0.5 * world_sizeXY, 0.5 * world_sizeXY, 0.5 * world_sizeZ); 
+    auto solidWorld = new G4Box("World", worldSize/2, worldSize/2, worldSize/2);
+    auto logicWorld = new G4LogicalVolume(solidWorld, worldmat, "World");
+    auto physWorld = new G4PVPlacement(nullptr, G4ThreeVector(), logicWorld, "World", nullptr, false, 0, checkOverlaps);
 
-  auto logicWorld = new G4LogicalVolume(solidWorld,  
-                                        world_mat,  
-                                        "World");  
+    // shield
+    G4double shieldX = 30. * cm;   
+    G4double shieldY = 30. * cm;
+    G4double shieldZ = fShieldThickness;
+    G4Material* shieldMat = nist->FindOrBuildMaterial(fShieldMaterialName);
 
-  auto physWorld = new G4PVPlacement(NULL, 
-                                     G4ThreeVector(),  
-                                     logicWorld,  
-                                     "World",  
-                                     NULL,  
-                                     false, 
-                                     0,  
-                                     checkOverlaps);  
+    auto solidShield = new G4Box("Shield", shieldX/2, shieldY/2, shieldZ/2);
+    auto logicalSheild = new G4LogicalVolume(solidShield, shieldMat, "Shield");
+    auto physheild = new G4PVPlacement(nullptr,
+                      G4ThreeVector(0, 0, 0),
+                      logicalSheild,
+                      "Shield",
+                      logicWorld,
+                      false,
+                      0,
+                      checkOverlaps);
 
-  //屏蔽材料
-  G4Material* shield_mat = nist->FindOrBuildMaterial("G4_Pb");
+    // Detector 
+    G4double detX = 20. * cm;
+    G4double detY = 20. * cm;
+    G4double detZ = 1.0 * mm; 
+    G4double detPosZ = shieldZ/2 + detZ/2 + 0.1 * mm; 
 
-  auto solidShield = new G4Box("Shield",0.5*shield_sizeXY,0.5 * shield_sizeXY,0.5*shield_sizeZ);
-  
-  auto logicaShield = new G4LogicalVolume(solidShield,shield_mat,"Shield");
+    auto solidDet = new G4Box("Detector", detX/2, detY/2, detZ/2);
+    G4Material* detMat = nist->FindOrBuildMaterial("G4_WATER"); 
+    fDetectorLogic = new G4LogicalVolume(solidDet, detMat, "Detector");
 
-  auto physShield =new G4PVPlacement(NULL,G4ThreeVector(),logicaShield,"Shield",logicWorld,false,0,checkOverlaps);
+    new G4PVPlacement(nullptr,
+                      G4ThreeVector(0, 0, detPosZ),
+                      fDetectorLogic,
+                      "Detector",
+                      logicWorld,
+                      false,
+                      0,
+                      checkOverlaps);
 
-     return physWorld;
+    return physWorld;
+}
+
+// --- Setter functions for UI commands ---
+void DetectorConstruction::SetShieldMaterial(const G4String& materialName)
+{
+    fShieldMaterialName = materialName;
+}
+
+void DetectorConstruction::SetShieldThickness(G4double thickness)
+{
+    fShieldThickness = thickness;
 }
