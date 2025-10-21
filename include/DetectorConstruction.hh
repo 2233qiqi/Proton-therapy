@@ -19,7 +19,6 @@ public:
     void SetShieldThickness(G4double thickness); 
 
 private:
-    G4LogicalVolume* fDetectorLogic; 
 
     G4String fShieldMaterialName;
     G4double fShieldThickness;

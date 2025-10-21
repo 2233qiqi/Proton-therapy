@@ -8,7 +8,7 @@
 #include "G4PhysicalConstants.hh"
 
 DetectorConstruction::DetectorConstruction()
-    : fDetectorLogic(nullptr),
+    : 
       fShieldMaterialName("G4_Pb"),
       fShieldThickness(5.0 * cm)
 {}
@@ -36,7 +36,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 
     auto solidShield = new G4Box("Shield", shieldX/2, shieldY/2, shieldZ/2);
     auto logicalSheild = new G4LogicalVolume(solidShield, shieldMat, "Shield");
-    auto physheild = new G4PVPlacement(nullptr,
+    auto physsheild = new G4PVPlacement(nullptr,
                       G4ThreeVector(0, 0, 0),
                       logicalSheild,
                       "Shield",
@@ -50,14 +50,13 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
     G4double detY = 20. * cm;
     G4double detZ = 1.0 * mm; 
     G4double detPosZ = shieldZ/2 + detZ/2 + 0.1 * mm; 
+    G4Material* detMat = nist->FindOrBuildMaterial("G4_WATER"); 
 
     auto solidDet = new G4Box("Detector", detX/2, detY/2, detZ/2);
-    G4Material* detMat = nist->FindOrBuildMaterial("G4_WATER"); 
-    fDetectorLogic = new G4LogicalVolume(solidDet, detMat, "Detector");
-
-    new G4PVPlacement(nullptr,
+    auto logicalDet = new G4LogicalVolume(solidDet,detMat,"Detector");
+    auto physDet = new G4PVPlacement(nullptr,
                       G4ThreeVector(0, 0, detPosZ),
-                      fDetectorLogic,
+                      logicalDet,
                       "Detector",
                       logicWorld,
                       false,
