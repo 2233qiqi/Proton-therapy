@@ -34,3 +34,14 @@ void PrimaryGeneratorAction::SetEnergy(G4double energy_MeV)
     fParticleGun->SetParticleEnergy(energy_MeV * MeV);
 }
 
+void PrimaryGeneratorAction::SetParticle(G4String particleName)
+{
+    auto particleTable = G4ParticleTable::GetParticleTable();
+    auto particle = particleTable->FindParticle(particleName);
+    if (particle) {
+        fParticleGun->SetParticleDefinition(particle);
+    } else {
+        G4cerr << "### Particle [" << particleName << "] not found!" << G4endl;
+    }
+}
+
