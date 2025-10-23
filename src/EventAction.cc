@@ -3,7 +3,9 @@
 
 EventAction::EventAction(RunAction* runAction)
     : fRunAction(runAction), fEnergyDeposit(0.)
-{}
+{
+    
+}
 
 EventAction::~EventAction() = default;
 
