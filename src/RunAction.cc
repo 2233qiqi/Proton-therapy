@@ -1,4 +1,3 @@
-// RunAction.cc
 #include "RunAction.hh"
 #include "G4Run.hh"
 #include "G4SystemOfUnits.hh"
@@ -35,7 +34,7 @@ void RunAction::EndOfRunAction(const G4Run* run)
         << G4endl;
     out.close();
 
-    G4cout << "### Run " << run->GetRunID() << " ended." << G4endl;
+    G4cout << "Run " << run->GetRunID() << " ended." << G4endl;
     G4cout << "  Total events: " << fEventCount << G4endl;
     G4cout << "  Average dose: " << dose / gray << " Gy" << G4endl;
 }
