@@ -34,7 +34,6 @@ int main(int argc, char **argv)
     physicsList->SetVerboseLevel(1);
     runManager->SetUserInitialization(physicsList);
 
-    // === 直接注册 Actions（无需 ActionInitialization）===
     runManager->SetUserAction(new PrimaryGeneratorAction);
 
     auto runAction = new RunAction();
