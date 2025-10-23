@@ -38,3 +38,8 @@ void RunAction::EndOfRunAction(const G4Run* run)
     G4cout << "  Total events: " << fEventCount << G4endl;
     G4cout << "  Average dose: " << dose / gray << " Gy" << G4endl;
 }
+
+G4Run* RunAction::GenerateRun()
+{
+    return new G4Run(); 
+}
