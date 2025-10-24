@@ -6,6 +6,12 @@
 #include <fstream>
 #include <iomanip>
 #include <iostream>
+#include "TCanvas.h"
+#include "TGraph.h"
+#include "TAxis.h"
+#include "TStyle.h"
+#include "TROOT.h"
+
 
 RunAction::RunAction()
     : fTotalEnergyDeposit(0.), fEventCount(0)
@@ -50,20 +56,33 @@ void RunAction::WriteDepthDose()
     const G4int nBins = SteppingAction::GetNBins();
     const G4double maxDepth = SteppingAction::GetMaxDepth();
 
-    if (depthEdep.empty() || nBins == 0 || maxDepth == 0)
-    {
-        G4cout << "Warning: Depth-dose data not initialized, skipping output." << G4endl;
+    if (depthEdep.empty() || nBins == 0 || maxDepth == 0) {
+        G4cout << "Warning: Depth-dose data not initialized, skipping ROOT drawing." << G4endl;
         return;
     }
 
-    std::ofstream outFile("depth_dose.txt");
-    for (int i = 0; i < nBins; ++i)
-    {
-        G4double depth = (i + 0.5) * (maxDepth / nBins);
-        outFile << std::setw(10) << depth / CLHEP::mm << " "
-                << std::setw(14) << depthEdep[i] / CLHEP::MeV << "\n";
-    }
-    outFile.close();
+    TGraph* graph = new TGraph(nBins);
 
-    G4cout << "Depth-dose data written to depth_dose.txt" << G4endl;
+    for (int i = 0; i < nBins; ++i) {
+        G4double depth = (i + 0.5) * (maxDepth / nBins);
+        G4double edep = depthEdep[i];
+        graph->SetPoint(i, depth / CLHEP::mm, edep / CLHEP::MeV);
+    }
+
+    gStyle->SetOptStat(0);
+    TCanvas* c1 = new TCanvas("c1", "Depth Dose Distribution", 800, 600);
+    c1->SetGrid();
+
+    graph->SetTitle("Depth-Energy Deposition Distribution;Depth (mm);Deposited Energy (MeV)");
+    graph->SetLineColor(kRed);
+    graph->SetLineWidth(2);
+    graph->SetMarkerStyle(20);
+    graph->SetMarkerColor(kRed);
+
+    graph->Draw("ALP");
+
+    c1->SaveAs("depth_dose.root");
+    c1->SaveAs("depth_dose.png");
+
+    G4cout << "ROOT plot generated: depth_dose.root / depth_dose.png" << G4endl;
 }
