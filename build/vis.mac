@@ -31,7 +31,7 @@
 
 /vis/scene/add/scale 0.005 mm # 比例尺
 
-/vis/geometry/set/visibility LogicWorld 0 true
+/vis/geometry/set/forceWireframe  logicWorld 0 true
 
 
 /vis/viewer/set/style surface
@@ -42,3 +42,6 @@
 /vis/viewer/set/autoRefresh true
 /vis/verbose warnings
 
+# Initialize GPS
+
+/run/beamOn 10000

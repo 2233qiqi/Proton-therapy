@@ -41,7 +41,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
     auto solidShield = new G4Box("Shield", shieldX/2, shieldY/2, shieldZ/2);
     auto logicalSheild = new G4LogicalVolume(solidShield, shieldMat, "Shield");
     auto physsheild = new G4PVPlacement(nullptr,
-                      G4ThreeVector(0, 0,-5),
+                      G4ThreeVector(0, 0,0),
                       logicalSheild,
                       "Shield",
                       logicWorld,
@@ -49,7 +49,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
                       0,
                       checkOverlaps);
 
-    G4VisAttributes* shieldVis = new G4VisAttributes(G4Colour(0.3, 0.3, 0.3)); // dark gray
+    G4VisAttributes* shieldVis = new G4VisAttributes(G4Colour(0.3, 0.3, 0.8)); 
     shieldVis->SetLineWidth(2);
     logicalSheild->SetVisAttributes(shieldVis);
 
@@ -69,7 +69,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
                       0,
                       checkOverlaps);
 
-    G4VisAttributes* detVis = new G4VisAttributes(G4Colour(1.0, 0., 0.0, 0.5)); // light blue, semi-transparent
+    G4VisAttributes* detVis = new G4VisAttributes(G4Colour(1.0, 0., 0.0, 0.8)); 
     detVis->SetLineWidth(2);
     logicalDet->SetVisAttributes(detVis);
 
