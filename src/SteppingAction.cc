@@ -2,21 +2,49 @@
 #include "EventAction.hh"
 #include "G4Step.hh"
 #include "G4LogicalVolume.hh"
+#include "G4SystemOfUnits.hh"
+#include <cmath>
+
+
+std::vector<G4double> SteppingAction::fDepthEdep;
+G4int SteppingAction::fNBins = 100;
+G4double SteppingAction::fMaxDepth = 50.0 * mm; 
 
 SteppingAction::SteppingAction(EventAction* eventAction)
     : fEventAction(eventAction)
-{}
+{
+    fDepthEdep.assign(fNBins, 0.0);
+}
 
 SteppingAction::~SteppingAction() = default;
 
 void SteppingAction::UserSteppingAction(const G4Step* step)
 {
- 
     G4LogicalVolume* volume = step->GetPreStepPoint()->GetPhysicalVolume()->GetLogicalVolume();
+    G4double edep = step->GetTotalEnergyDeposit();
 
- 
+    if (edep <= 0.) return;
+
     if (volume->GetName() == "Detector") {
-        G4double edep = step->GetTotalEnergyDeposit();
         fEventAction->AddEnergyDeposit(edep);
+    }
+
+    if (volume->GetName() == "Shield") {
+        G4double z = step->GetPreStepPoint()->GetPosition().z();
+        
+        G4double shieldFrontZ = -5. * mm - fMaxDepth / 2.0;
+        G4double depth = z - shieldFrontZ; 
+
+        if (depth >= 0 && depth <= fMaxDepth) {
+            AddShieldEdep(depth, edep);
+        }
+    }
+}
+
+void SteppingAction::AddShieldEdep(G4double depth, G4double edep)
+{
+    G4int bin = static_cast<G4int>(depth / fMaxDepth * fNBins);
+    if (bin >= 0 && bin < fNBins) {
+        fDepthEdep[bin] += edep;
     }
 }
