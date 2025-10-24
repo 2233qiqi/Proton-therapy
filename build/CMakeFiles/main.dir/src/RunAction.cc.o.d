@@ -226,8 +226,10 @@ CMakeFiles/main.dir/src/RunAction.cc.o: \
  /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc /usr/local/include/Geant4/G4Run.hh \
- /usr/local/include/Geant4/globals.hh \
+ /usr/include/c++/13/bits/vector.tcc \
+ /home/qiqi/geant4/Proton-therapy/include/SteppingAction.hh \
+ /usr/local/include/Geant4/G4UserSteppingAction.hh \
+ /usr/local/include/Geant4/G4Run.hh /usr/local/include/Geant4/globals.hh \
  /usr/local/include/Geant4/G4SystemOfUnits.hh \
  /usr/local/include/Geant4/CLHEP/Units/SystemOfUnits.h \
  /usr/include/c++/13/fstream \
