@@ -12,6 +12,7 @@ EventAction::~EventAction() = default;
 void EventAction::BeginOfEventAction(const G4Event*)
 {
     fEnergyDeposit = 0.;
+    
 }
 
 void EventAction::EndOfEventAction(const G4Event*)

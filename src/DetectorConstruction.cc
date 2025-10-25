@@ -11,7 +11,7 @@
 DetectorConstruction::DetectorConstruction()
     : 
       fShieldMaterialName("G4_Pb"),
-      fShieldThickness(5.0 * cm)
+      fShieldThickness(1.0 * cm)
 {}
 
 DetectorConstruction::~DetectorConstruction() = default;
@@ -75,7 +75,6 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 
     return physWorld;
 
-    return physWorld;
 }
 
 // commands
