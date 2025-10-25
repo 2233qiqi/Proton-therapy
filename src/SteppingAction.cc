@@ -1,4 +1,3 @@
-// SteppingAction.cc
 #include "SteppingAction.hh"
 #include "EventAction.hh"
 #include "G4Step.hh"
@@ -34,18 +33,14 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
     if (volume->GetName() == "Shield") {
         G4double z = step->GetPreStepPoint()->GetPosition().z();
         G4double shieldFrontZ = -5. * mm - fMaxDepth / 2.0;
-        G4double depth = z - shieldFrontZ; 
+        G4double shieldBackZ = shieldFrontZ + fMaxDepth;
 
-        if (depth >= 0 && depth <= fMaxDepth) {
-            AddShieldEdep(depth, edep);
+        if (z >= shieldBackZ) {  
+            G4LogicalVolume* nextVolume = step->GetPostStepPoint()->GetPhysicalVolume()->GetLogicalVolume();
+            if (nextVolume && nextVolume->GetName() == "Detector") {
+                fEventAction->AddEnergyDeposit(edep);  
+            }
         }
     }
 }
 
-void SteppingAction::AddShieldEdep(G4double depth, G4double edep)
-{
-    G4int bin = static_cast<G4int>(depth / fMaxDepth * fNBins);
-    if (bin >= 0 && bin < fNBins) {
-        fDepthEdep[bin] += edep;
-    }
-}

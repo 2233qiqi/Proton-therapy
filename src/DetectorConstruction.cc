@@ -55,13 +55,13 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 
     // Detector 
     G4double detZ = 1.0 * mm; 
-    G4double detPosZ = shieldZ/2 + detZ/2 + 0.1 * mm; 
+
     G4Material* detMat = nist->FindOrBuildMaterial("G4_WATER"); 
 
     auto solidDet = new G4Box("Detector", shieldX/2, shieldY/2, detZ/2);
     auto logicalDet = new G4LogicalVolume(solidDet,detMat,"Detector");
     auto physDet = new G4PVPlacement(nullptr,
-                      G4ThreeVector(0, 0, detPosZ),
+                      G4ThreeVector(0, 0, 5.5*mm),
                       logicalDet,
                       "Detector",
                       logicWorld,
