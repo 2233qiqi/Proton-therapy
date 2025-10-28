@@ -1,4 +1,6 @@
 #include "DetectorConstruction.hh"
+#include "CommandMessenger.hh"
+
 
 #include "G4Box.hh"
 #include "G4LogicalVolume.hh"
@@ -11,10 +13,17 @@
 DetectorConstruction::DetectorConstruction()
     : 
       fShieldMaterialName("G4_Pb"),
-      fShieldThickness(1.0 * cm)
-{}
+      fShieldThickness(1.0 * cm),
+      fMessenger(nullptr)   
+{
+    fMessenger = new CommandMessenger(this);
+}
 
-DetectorConstruction::~DetectorConstruction() = default;
+DetectorConstruction::~DetectorConstruction()
+{
+    delete fMessenger;
+}
+
 
 G4VPhysicalVolume* DetectorConstruction::Construct()
 {

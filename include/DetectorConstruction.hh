@@ -6,6 +6,7 @@
 
 class G4VPhysicalVolume;
 class G4LogicalVolume;
+class CommandMessenger;  
 
 class DetectorConstruction : public G4VUserDetectorConstruction
 {
@@ -16,12 +17,13 @@ public:
     G4VPhysicalVolume* Construct() override;
 
     void SetShieldMaterial(const G4String& materialName);
-    void SetShieldThickness(G4double thickness); 
+    void SetShieldThickness(G4double thickness);
 
 private:
-
     G4String fShieldMaterialName;
     G4double fShieldThickness;
+
+    CommandMessenger* fMessenger;  
 };
 
 #endif
