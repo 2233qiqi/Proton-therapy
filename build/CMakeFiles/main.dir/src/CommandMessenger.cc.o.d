@@ -1,8 +1,12 @@
-CMakeFiles/main.dir/src/DetectorConstruction.cc.o: \
- /home/qiqi/geant4/Proton-therapy/src/DetectorConstruction.cc \
+CMakeFiles/main.dir/src/CommandMessenger.cc.o: \
+ /home/qiqi/geant4/Proton-therapy/src/CommandMessenger.cc \
  /usr/include/stdc-predef.h \
- /home/qiqi/geant4/Proton-therapy/include/DetectorConstruction.hh \
- /usr/local/include/Geant4/G4VUserDetectorConstruction.hh \
+ /home/qiqi/geant4/Proton-therapy/include/CommandMessenger.hh \
+ /usr/local/include/Geant4/G4UImessenger.hh \
+ /usr/local/include/Geant4/G4UIdirectory.hh \
+ /usr/local/include/Geant4/G4UIcommand.hh \
+ /usr/local/include/Geant4/G4ApplicationState.hh \
+ /usr/local/include/Geant4/G4ThreeVector.hh \
  /usr/local/include/Geant4/globals.hh /usr/local/include/Geant4/G4ios.hh \
  /usr/local/include/Geant4/G4Types.hh \
  /usr/local/include/Geant4/G4GlobalConfig.hh /usr/include/c++/13/complex \
@@ -222,124 +226,20 @@ CMakeFiles/main.dir/src/DetectorConstruction.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
  /usr/include/c++/13/bits/parse_numbers.h \
  /usr/include/c++/13/bits/std_mutex.h \
- /usr/include/c++/13/bits/unique_lock.h /usr/include/c++/13/vector \
- /usr/include/c++/13/bits/stl_uninitialized.h \
- /usr/include/c++/13/bits/stl_vector.h \
- /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc /usr/local/include/Geant4/globals.hh \
- /home/qiqi/geant4/Proton-therapy/include/CommandMessenger.hh \
- /usr/local/include/Geant4/G4UImessenger.hh \
- /usr/local/include/Geant4/G4UIdirectory.hh \
- /usr/local/include/Geant4/G4UIcommand.hh \
- /usr/local/include/Geant4/G4ApplicationState.hh \
- /usr/local/include/Geant4/G4ThreeVector.hh \
+ /usr/include/c++/13/bits/unique_lock.h \
  /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.h \
  /usr/local/include/Geant4/CLHEP/Utility/defs.h \
  /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.icc \
- /usr/local/include/Geant4/G4UIparameter.hh \
+ /usr/local/include/Geant4/G4UIparameter.hh /usr/include/c++/13/vector \
+ /usr/include/c++/13/bits/stl_uninitialized.h \
+ /usr/include/c++/13/bits/stl_vector.h \
+ /usr/include/c++/13/bits/stl_bvector.h \
+ /usr/include/c++/13/bits/vector.tcc \
  /usr/local/include/Geant4/G4UIcmdWithAString.hh \
  /usr/local/include/Geant4/G4UIcmdWithADoubleAndUnit.hh \
- /usr/local/include/Geant4/G4Box.hh \
- /usr/local/include/Geant4/G4GeomTypes.hh \
- /usr/local/include/Geant4/G4GeomConfig.hh \
- /usr/local/include/Geant4/G4CSGSolid.hh \
- /usr/local/include/Geant4/G4VSolid.hh \
- /usr/local/include/Geant4/geomdefs.hh \
- /usr/local/include/Geant4/G4VSolid.icc \
- /usr/local/include/Geant4/G4Polyhedron.hh \
- /usr/local/include/Geant4/HepPolyhedron.h \
- /usr/local/include/Geant4/G4TwoVector.hh \
- /usr/local/include/Geant4/CLHEP/Vector/TwoVector.h \
- /usr/local/include/Geant4/CLHEP/Vector/TwoVector.icc \
- /usr/local/include/Geant4/G4Point3D.hh \
- /usr/local/include/Geant4/CLHEP/Geometry/Point3D.h \
- /usr/local/include/Geant4/CLHEP/Geometry/BasicVector3D.h \
- /usr/local/include/Geant4/G4Normal3D.hh \
- /usr/local/include/Geant4/CLHEP/Geometry/Normal3D.h \
- /usr/local/include/Geant4/G4Transform3D.hh \
- /usr/local/include/Geant4/CLHEP/Geometry/Transform3D.h \
- /usr/local/include/Geant4/CLHEP/Geometry/Transform3D.icc \
- /usr/local/include/Geant4/CLHEP/Vector/Rotation.h \
- /usr/local/include/Geant4/CLHEP/Vector/RotationInterfaces.h \
- /usr/local/include/Geant4/CLHEP/Vector/LorentzVector.h \
- /usr/local/include/Geant4/CLHEP/Vector/LorentzVector.icc \
- /usr/local/include/Geant4/CLHEP/Vector/AxisAngle.h \
- /usr/local/include/Geant4/CLHEP/Vector/AxisAngle.icc \
- /usr/local/include/Geant4/CLHEP/Vector/RotationInterfaces.icc \
- /usr/local/include/Geant4/CLHEP/Vector/RotationX.h \
- /usr/local/include/Geant4/CLHEP/Vector/RotationX.icc \
- /usr/local/include/Geant4/CLHEP/Units/PhysicalConstants.h \
- /usr/local/include/Geant4/CLHEP/Units/SystemOfUnits.h \
- /usr/local/include/Geant4/CLHEP/Vector/RotationY.h \
- /usr/local/include/Geant4/CLHEP/Vector/RotationY.icc \
- /usr/local/include/Geant4/CLHEP/Vector/RotationZ.h \
- /usr/local/include/Geant4/CLHEP/Vector/RotationZ.icc \
- /usr/local/include/Geant4/CLHEP/Vector/Rotation.icc \
- /usr/local/include/Geant4/CLHEP/Geometry/Vector3D.h \
- /usr/local/include/Geant4/G4Visible.hh \
- /usr/local/include/Geant4/G4Visible.icc \
- /usr/local/include/Geant4/G4Box.icc \
- /usr/local/include/Geant4/G4LogicalVolume.hh /usr/include/c++/13/memory \
- /usr/include/c++/13/bits/stl_raw_storage_iter.h \
- /usr/include/c++/13/bits/align.h /usr/include/c++/13/bits/unique_ptr.h \
- /usr/include/c++/13/bits/shared_ptr.h \
- /usr/include/c++/13/bits/shared_ptr_base.h \
- /usr/include/c++/13/bits/allocated_ptr.h \
- /usr/include/c++/13/ext/concurrence.h \
- /usr/include/c++/13/bits/shared_ptr_atomic.h \
- /usr/include/c++/13/bits/atomic_base.h \
- /usr/include/c++/13/bits/atomic_lockfree_defines.h \
- /usr/include/c++/13/backward/auto_ptr.h \
- /usr/include/c++/13/pstl/glue_memory_defs.h \
- /usr/local/include/Geant4/G4Region.hh \
- /usr/local/include/Geant4/G4GeomSplitter.hh \
- /usr/local/include/Geant4/geomwdefs.hh \
- /usr/local/include/Geant4/G4AutoLock.hh \
- /usr/local/include/Geant4/G4Threading.hh /usr/include/c++/13/chrono \
- /usr/include/c++/13/condition_variable /usr/include/c++/13/future \
- /usr/include/c++/13/bits/atomic_futex.h /usr/include/c++/13/atomic \
- /usr/include/c++/13/bits/std_function.h \
- /usr/include/c++/13/bits/std_thread.h /usr/include/c++/13/thread \
- /usr/include/c++/13/bits/this_thread_sleep.h \
- /usr/local/include/Geant4/G4Region.icc \
- /usr/local/include/Geant4/G4VPhysicalVolume.hh \
- /usr/local/include/Geant4/G4RotationMatrix.hh \
- /usr/local/include/Geant4/G4VPhysicalVolume.icc \
- /usr/local/include/Geant4/G4LogicalVolume.icc \
- /usr/local/include/Geant4/G4PVPlacement.hh \
- /usr/local/include/Geant4/G4NistManager.hh \
- /usr/local/include/Geant4/G4ICRU90StoppingData.hh \
- /usr/local/include/Geant4/G4Material.hh \
- /usr/local/include/Geant4/G4Element.hh \
- /usr/local/include/Geant4/G4ElementTable.hh \
- /usr/local/include/Geant4/G4ElementVector.hh \
- /usr/local/include/Geant4/G4IonisParamElm.hh \
- /usr/local/include/Geant4/G4Isotope.hh \
- /usr/local/include/Geant4/G4IsotopeVector.hh \
- /usr/local/include/Geant4/G4IonisParamMat.hh \
- /usr/local/include/Geant4/G4DensityEffectCalculator.hh \
- /usr/local/include/Geant4/G4MaterialPropertiesTable.hh \
- /usr/local/include/Geant4/G4MaterialPropertiesIndex.hh \
- /usr/local/include/Geant4/G4MaterialPropertyVector.hh \
- /usr/local/include/Geant4/G4PhysicsFreeVector.hh \
- /usr/local/include/Geant4/G4PhysicsVector.hh /usr/include/c++/13/fstream \
- /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
- /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
- /usr/include/c++/13/bits/fstream.tcc /usr/local/include/Geant4/G4Log.hh \
- /usr/local/include/Geant4/G4PhysicsVectorType.hh \
- /usr/local/include/Geant4/G4PhysicsVector.icc \
- /usr/local/include/Geant4/G4MaterialTable.hh \
- /usr/local/include/Geant4/G4SandiaTable.hh \
- /usr/local/include/Geant4/G4OrderedTable.hh \
- /usr/local/include/Geant4/G4DataVector.hh \
- /usr/local/include/Geant4/G4DataVector.icc /usr/include/assert.h \
- /usr/local/include/Geant4/G4NistElementBuilder.hh \
- /usr/local/include/Geant4/G4NistMaterialBuilder.hh \
- /usr/local/include/Geant4/G4Pow.hh /usr/local/include/Geant4/G4Exp.hh \
+ /usr/local/include/Geant4/globals.hh \
+ /home/qiqi/geant4/Proton-therapy/include/DetectorConstruction.hh \
+ /usr/local/include/Geant4/G4VUserDetectorConstruction.hh \
+ /usr/local/include/Geant4/G4UIdirectory.hh \
  /usr/local/include/Geant4/G4SystemOfUnits.hh \
- /usr/local/include/Geant4/G4PhysicalConstants.hh \
- /usr/local/include/Geant4/G4VisAttributes.hh \
- /usr/local/include/Geant4/graphics_reps_defs.hh \
- /usr/local/include/Geant4/G4Colour.hh \
- /usr/local/include/Geant4/G4Color.hh \
- /usr/local/include/Geant4/G4VisAttributes.icc
+ /usr/local/include/Geant4/CLHEP/Units/SystemOfUnits.h
