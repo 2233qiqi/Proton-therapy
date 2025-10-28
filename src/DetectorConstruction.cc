@@ -47,6 +47,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
     G4double shieldZ = fShieldThickness;
     G4Material* shieldMat = nist->FindOrBuildMaterial(fShieldMaterialName);
 
+   
     auto solidShield = new G4Box("Shield", shieldX/2, shieldY/2, shieldZ/2);
     auto logicalSheild = new G4LogicalVolume(solidShield, shieldMat, "Shield");
     auto physsheild = new G4PVPlacement(nullptr,
@@ -81,6 +82,11 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
     G4VisAttributes* detVis = new G4VisAttributes(G4Colour(1.0, 0., 0.0, 0.8)); 
     detVis->SetLineWidth(2);
     logicalDet->SetVisAttributes(detVis);
+
+    
+
+     G4cout << "Shield: " << shieldX << "x" << shieldY << "x" << shieldZ/CLHEP::cm 
+       << " cm, material: " << shieldMat->GetName() << G4endl;
 
     return physWorld;
 

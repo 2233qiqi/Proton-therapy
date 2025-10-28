@@ -3,14 +3,21 @@
 #include "G4UIExecutive.hh"
 #include "G4SteppingVerbose.hh"
 #include "G4VisExecutive.hh"
+
 #include "DetectorConstruction.hh"
 #include "PhysicsList.hh"
-
-
 #include "PrimaryGenerator.hh"
 #include "RunAction.hh"
 #include "EventAction.hh"
 #include "SteppingAction.hh"
+
+#include <string>
+
+bool isMacroFile(const char* filename)
+{
+    std::string str(filename);
+    return str.size() >= 4 && str.substr(str.size()-4) == ".mac";
+}
 
 int main(int argc, char **argv)
 {
@@ -19,52 +26,64 @@ int main(int argc, char **argv)
         ui = new G4UIExecutive(argc, argv);
     }
 
-    G4int precision = 4;
-    G4SteppingVerbose::UseBestUnit(precision);
+    G4SteppingVerbose::UseBestUnit(4);
 
-    // Create run manager (serial mode)
-    auto runManager = G4RunManagerFactory::CreateRunManager(G4RunManagerType::Serial); // 明确指定 Serial
+    // Run manager
+    auto runManager = G4RunManagerFactory::CreateRunManager(G4RunManagerType::Serial);
 
-    // Detector
+    // Detector and Physics
     auto detConstruction = new DetectorConstruction();
     runManager->SetUserInitialization(detConstruction);
 
-    // Physics
     auto physicsList = new PhysicsList();
     physicsList->SetVerboseLevel(1);
     runManager->SetUserInitialization(physicsList);
 
     runManager->SetUserAction(new PrimaryGeneratorAction);
-
     auto runAction = new RunAction();
     auto eventAction = new EventAction(runAction);
     auto steppingAction = new SteppingAction(eventAction);
-
     runManager->SetUserAction(runAction);
     runManager->SetUserAction(eventAction);
     runManager->SetUserAction(steppingAction);
 
-    // Initialize kernel
     runManager->Initialize();
 
-    // Visualization
+    // Visualization manager (Quiet mode)
     auto visManager = new G4VisExecutive("Quiet");
     visManager->Initialize();
 
-    // UI
     auto UImanager = G4UImanager::GetUIpointer();
-    if (!ui) {
-        G4String command = "/control/execute ";
-        G4String fileName = argv[1];
-        UImanager->ApplyCommand(command + fileName);
-    } else {
-        UImanager->ApplyCommand("/control/execute vis.mac");
-        ui->SessionStart();
-        delete ui;
+
+    // -------------- 命令行模式 ----------------
+    if (argc > 1)
+    {
+        if (isMacroFile(argv[1])) {
+            // 执行宏文件
+            UImanager->ApplyCommand("/control/execute " + G4String(argv[1]));
+        } else {
+            // 执行所有命令行命令（修改几何等）
+            for (int i = 1; i < argc; i++)
+                UImanager->ApplyCommand(argv[i]);
+
+            // 自动重初始化几何
+            UImanager->ApplyCommand("/run/reinitializeGeometry");
+
+            G4cout << "Geometry updated according to command line inputs." << G4endl;
+            G4cout << "Now run your macro file to perform the simulation." << G4endl;
+        }
+
+        delete visManager;
+        delete runManager;
+        return 0;
     }
+
+    // -------------- 交互式 UI 模式 ----------------
+    UImanager->ApplyCommand("/control/execute vis.mac");
+    ui->SessionStart();
+    delete ui;
 
     delete visManager;
     delete runManager;
-
     return 0;
 }
