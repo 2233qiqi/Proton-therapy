@@ -61,7 +61,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
     auto solidDet = new G4Box("Detector", shieldX/2, shieldY/2, detZ/2);
     auto logicalDet = new G4LogicalVolume(solidDet,detMat,"Detector");
     auto physDet = new G4PVPlacement(nullptr,
-                      G4ThreeVector(0, 0, 5.5*mm),
+                      G4ThreeVector(0, 0, shieldZ/2+detZ/2),
                       logicalDet,
                       "Detector",
                       logicWorld,

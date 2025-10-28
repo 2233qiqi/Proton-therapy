@@ -30,7 +30,7 @@ void RunAction::BeginOfRunAction(const G4Run* run)
 void RunAction::EndOfRunAction(const G4Run* run)
 {
     G4double avgEdep = fTotalEnergyDeposit / fEventCount;
-    G4double detMass = 40.0 * g;
+    G4double detMass =8.9e-13 * kg;
     G4double dose = avgEdep / detMass;
 
     std::ofstream out("dose_output.txt", std::ios::app);
@@ -41,7 +41,10 @@ void RunAction::EndOfRunAction(const G4Run* run)
 
     G4cout << "Run " << run->GetRunID() << " ended." << G4endl;
     G4cout << "  Total events: " << fEventCount << G4endl;
-    G4cout << "  Average dose: " << dose / gray << " Gy" << G4endl;
+    G4cout << "  Average dose: " << dose / gray << " Sv" << G4endl;
+    G4cout << "Total deposited energy in detector: "
+       << fTotalEnergyDeposit / CLHEP::MeV << " MeV" << G4endl;
+
 }
 
 G4Run* RunAction::GenerateRun()
