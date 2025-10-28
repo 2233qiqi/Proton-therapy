@@ -28,10 +28,8 @@ int main(int argc, char **argv)
 
     G4SteppingVerbose::UseBestUnit(4);
 
-    // Run manager
     auto runManager = G4RunManagerFactory::CreateRunManager(G4RunManagerType::Serial);
 
-    // Detector and Physics
     auto detConstruction = new DetectorConstruction();
     runManager->SetUserInitialization(detConstruction);
 
@@ -49,40 +47,33 @@ int main(int argc, char **argv)
 
     runManager->Initialize();
 
-    // Visualization manager (Quiet mode)
     auto visManager = new G4VisExecutive("Quiet");
     visManager->Initialize();
 
     auto UImanager = G4UImanager::GetUIpointer();
 
-    // -------------- 命令行模式 ----------------
     if (argc > 1)
     {
-        if (isMacroFile(argv[1])) {
-            // 执行宏文件
-            UImanager->ApplyCommand("/control/execute " + G4String(argv[1]));
-        } else {
-            // 执行所有命令行命令（修改几何等）
-            for (int i = 1; i < argc; i++)
-                UImanager->ApplyCommand(argv[i]);
-
-            // 自动重初始化几何
-            UImanager->ApplyCommand("/run/reinitializeGeometry");
-
-            G4cout << "Geometry updated according to command line inputs." << G4endl;
-            G4cout << "Now run your macro file to perform the simulation." << G4endl;
-        }
+        G4String command = "/control/execute " + G4String(argv[1]);
+        UImanager->ApplyCommand(command);
 
         delete visManager;
         delete runManager;
         return 0;
     }
+    else 
+    {
+        G4cout << "--- Entering Interactive Mode ---" << G4endl;
+        
+        UImanager->ApplyCommand("/control/execute vis.mac");
+        UImanager->ApplyCommand("/control/execute run.mac");
 
-    // -------------- 交互式 UI 模式 ----------------
-    UImanager->ApplyCommand("/control/execute vis.mac");
-    ui->SessionStart();
-    delete ui;
-
+        if (ui) {
+            ui->SessionStart();
+            delete ui;
+        }
+    }
+    
     delete visManager;
     delete runManager;
     return 0;

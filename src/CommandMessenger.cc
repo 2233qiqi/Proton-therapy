@@ -10,7 +10,7 @@ CommandMessenger::CommandMessenger(DetectorConstruction* detector)
     fCommandDir->SetGuidance("User commands for geometry control.");
 
     fShieldMatCmd = new G4UIcmdWithAString("/command/setShieldMaterial", this);
-    fShieldMatCmd->SetGuidance("Set shield material (e.g. G4_Pb, G4_Al, G4_Cu).");
+    fShieldMatCmd->SetGuidance("Set shield material (e.g. G4_Pb, G4_AIR, G4_Cu).");
 
     fShieldThickCmd = new G4UIcmdWithADoubleAndUnit("/command/setShieldThickness", this);
     fShieldThickCmd->SetGuidance("Set shield thickness.");
