@@ -63,7 +63,6 @@ int main(int argc, char **argv)
     }
     else 
     {
-        G4cout << "--- Entering Interactive Mode ---" << G4endl;
         
         UImanager->ApplyCommand("/control/execute vis.mac");
         UImanager->ApplyCommand("/control/execute run.mac");
