@@ -334,4 +334,5 @@ CMakeFiles/main.dir/src/DetectorConstruction.cc.o: \
  /usr/local/include/Geant4/graphics_reps_defs.hh \
  /usr/local/include/Geant4/G4Colour.hh \
  /usr/local/include/Geant4/G4Color.hh \
- /usr/local/include/Geant4/G4VisAttributes.icc
+ /usr/local/include/Geant4/G4VisAttributes.icc \
+ /usr/local/include/Geant4/G4Material.hh

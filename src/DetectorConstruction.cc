@@ -8,6 +8,7 @@
 #include "G4SystemOfUnits.hh"
 #include "G4PhysicalConstants.hh"
 #include "G4VisAttributes.hh"
+#include "G4Material.hh"
 
 DetectorConstruction::DetectorConstruction()
     : 
@@ -81,8 +82,10 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 
     
 
-     G4cout << "Shield: " << shieldX << "x" << shieldY << "x" << shieldZ/CLHEP::cm 
-       << " cm, material: " << shieldMat->GetName() << G4endl;
+    G4double detVolume = solidDet->GetCubicVolume();
+    G4double detDensity = detMat->GetDensity();
+    G4double rawMass = detDensity * detVolume; 
+    fDetectorMass = rawMass / CLHEP::kg;
 
     return physWorld;
 

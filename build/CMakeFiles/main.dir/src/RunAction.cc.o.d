@@ -222,14 +222,18 @@ CMakeFiles/main.dir/src/RunAction.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
  /usr/include/c++/13/bits/parse_numbers.h \
  /usr/include/c++/13/bits/std_mutex.h \
- /usr/include/c++/13/bits/unique_lock.h /usr/include/c++/13/vector \
+ /usr/include/c++/13/bits/unique_lock.h \
+ /home/qiqi/geant4/Proton-therapy/include/DetectorConstruction.hh \
+ /usr/local/include/Geant4/G4VUserDetectorConstruction.hh \
+ /usr/local/include/Geant4/globals.hh /usr/include/c++/13/vector \
  /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
  /home/qiqi/geant4/Proton-therapy/include/SteppingAction.hh \
  /usr/local/include/Geant4/G4UserSteppingAction.hh \
- /usr/local/include/Geant4/G4Run.hh /usr/local/include/Geant4/globals.hh \
+ /home/qiqi/geant4/Proton-therapy/include/DetectorConstruction.hh \
+ /usr/local/include/Geant4/G4Run.hh \
  /usr/local/include/Geant4/G4SystemOfUnits.hh \
  /usr/local/include/Geant4/CLHEP/Units/SystemOfUnits.h \
  /usr/include/c++/13/fstream \
@@ -305,27 +309,9 @@ CMakeFiles/main.dir/src/RunAction.cc.o: \
  /home/qiqi/ROOT/root/include/TVectorFfwd.h \
  /home/qiqi/ROOT/root/include/TVectorDfwd.h \
  /home/qiqi/ROOT/root/include/TFitResultPtr.h \
- /home/qiqi/ROOT/root/include/TAxis.h \
- /home/qiqi/ROOT/root/include/TAttAxis.h \
- /home/qiqi/ROOT/root/include/TArrayD.h \
- /home/qiqi/ROOT/root/include/TArray.h \
  /home/qiqi/ROOT/root/include/TStyle.h \
  /home/qiqi/ROOT/root/include/TAttText.h \
+ /home/qiqi/ROOT/root/include/TAttAxis.h \
  /home/qiqi/ROOT/root/include/TColor.h \
  /home/qiqi/ROOT/root/include/TArrayI.h \
- /home/qiqi/ROOT/root/include/TROOT.h \
- /home/qiqi/ROOT/root/include/TDirectory.h \
- /home/qiqi/ROOT/root/include/TClass.h \
- /home/qiqi/ROOT/root/include/TSchemaRule.h \
- /home/qiqi/ROOT/root/include/TObjArray.h \
- /usr/include/c++/13/unordered_map \
- /usr/include/c++/13/bits/unordered_map.h \
- /usr/include/c++/13/bits/hashtable.h \
- /usr/include/c++/13/bits/hashtable_policy.h \
- /usr/include/c++/13/bits/enable_special_members.h \
- /usr/include/c++/13/unordered_set \
- /usr/include/c++/13/bits/unordered_set.h \
- /home/qiqi/ROOT/root/include/TUUID.h \
- /home/qiqi/ROOT/root/include/TBuffer.h \
- /home/qiqi/ROOT/root/include/Bytes.h \
- /home/qiqi/ROOT/root/include/Byteswap.h
+ /home/qiqi/ROOT/root/include/TArray.h

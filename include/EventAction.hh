@@ -1,3 +1,5 @@
+// EventAction.hh (修正后)
+
 #ifndef EventAction_h
 #define EventAction_h 1
 
@@ -17,9 +19,12 @@ public:
 
     void AddEnergyDeposit(G4double edep) { fEnergyDeposit += edep; }
 
+
 private:
     RunAction* fRunAction;
     G4double fEnergyDeposit; 
+
+
 };
 
 #endif

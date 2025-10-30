@@ -10,7 +10,7 @@ PrimaryGeneratorAction::PrimaryGeneratorAction()
     fParticleGun = new G4ParticleGun(1); 
 
     auto particleTable = G4ParticleTable::GetParticleTable();
-    auto particle = particleTable->FindParticle("gamma");
+    auto particle = particleTable->FindParticle("e-");
 
     fParticleGun->SetParticleDefinition(particle);
     fParticleGun->SetParticleEnergy(1.0 * MeV);

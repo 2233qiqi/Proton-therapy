@@ -224,7 +224,10 @@ CMakeFiles/main.dir/src/EventAction.cc.o: \
  /usr/include/c++/13/bits/std_mutex.h \
  /usr/include/c++/13/bits/unique_lock.h \
  /home/qiqi/geant4/Proton-therapy/include/RunAction.hh \
- /usr/local/include/Geant4/G4UserRunAction.hh /usr/include/c++/13/vector \
+ /usr/local/include/Geant4/G4UserRunAction.hh \
+ /home/qiqi/geant4/Proton-therapy/include/DetectorConstruction.hh \
+ /usr/local/include/Geant4/G4VUserDetectorConstruction.hh \
+ /usr/local/include/Geant4/globals.hh /usr/include/c++/13/vector \
  /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \

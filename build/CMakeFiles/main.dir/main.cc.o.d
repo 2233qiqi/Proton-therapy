@@ -669,6 +669,7 @@ CMakeFiles/main.dir/main.cc.o: /home/qiqi/geant4/Proton-therapy/main.cc \
  /usr/local/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
  /home/qiqi/geant4/Proton-therapy/include/RunAction.hh \
  /usr/local/include/Geant4/G4UserRunAction.hh \
+ /home/qiqi/geant4/Proton-therapy/include/DetectorConstruction.hh \
  /home/qiqi/geant4/Proton-therapy/include/EventAction.hh \
  /usr/local/include/Geant4/G4UserEventAction.hh \
  /home/qiqi/geant4/Proton-therapy/include/SteppingAction.hh \
