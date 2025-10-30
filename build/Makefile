@@ -153,30 +153,6 @@ main.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cc.s
 .PHONY : main.cc.s
 
-src/CommandMessenger.o: src/CommandMessenger.cc.o
-.PHONY : src/CommandMessenger.o
-
-# target to build an object file
-src/CommandMessenger.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/CommandMessenger.cc.o
-.PHONY : src/CommandMessenger.cc.o
-
-src/CommandMessenger.i: src/CommandMessenger.cc.i
-.PHONY : src/CommandMessenger.i
-
-# target to preprocess a source file
-src/CommandMessenger.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/CommandMessenger.cc.i
-.PHONY : src/CommandMessenger.cc.i
-
-src/CommandMessenger.s: src/CommandMessenger.cc.s
-.PHONY : src/CommandMessenger.s
-
-# target to generate assembly for a file
-src/CommandMessenger.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/CommandMessenger.cc.s
-.PHONY : src/CommandMessenger.cc.s
-
 src/DetectorConstruction.o: src/DetectorConstruction.cc.o
 .PHONY : src/DetectorConstruction.o
 
@@ -333,9 +309,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/CommandMessenger.o"
-	@echo "... src/CommandMessenger.i"
-	@echo "... src/CommandMessenger.s"
 	@echo "... src/DetectorConstruction.o"
 	@echo "... src/DetectorConstruction.i"
 	@echo "... src/DetectorConstruction.s"

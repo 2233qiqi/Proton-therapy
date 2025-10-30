@@ -1,5 +1,4 @@
 #include "DetectorConstruction.hh"
-#include "CommandMessenger.hh"
 
 
 #include "G4Box.hh"
@@ -13,15 +12,11 @@
 DetectorConstruction::DetectorConstruction()
     : 
       fShieldMaterialName("G4_Pb"),
-      fShieldThickness(1.0 * cm),
-      fMessenger(nullptr)   
-{
-    fMessenger = new CommandMessenger(this);
-}
+      fShieldThickness(1.0 * cm)
+{}
 
 DetectorConstruction::~DetectorConstruction()
 {
-    delete fMessenger;
 }
 
 
@@ -45,6 +40,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
     G4double shieldX = 30. * cm;   
     G4double shieldY = 30. * cm;
     G4double shieldZ = fShieldThickness;
+    G4double SheildVolume = shieldX* shieldY *shieldZ;
     G4Material* shieldMat = nist->FindOrBuildMaterial(fShieldMaterialName);
 
    

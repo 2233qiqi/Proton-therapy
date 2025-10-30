@@ -18,12 +18,14 @@ public:
 
     void SetShieldMaterial(const G4String& materialName);
     void SetShieldThickness(G4double thickness);
+    void CalculateMass(); 
+    G4double GetDetectorMass() const { return fDetectorMass; }
 
 private:
     G4String fShieldMaterialName;
     G4double fShieldThickness;
+    G4double fDetectorMass;
 
-    CommandMessenger* fMessenger;  
 };
 
 #endif

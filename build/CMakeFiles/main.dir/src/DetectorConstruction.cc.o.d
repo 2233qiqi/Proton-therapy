@@ -227,24 +227,16 @@ CMakeFiles/main.dir/src/DetectorConstruction.cc.o: \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc /usr/local/include/Geant4/globals.hh \
- /home/qiqi/geant4/Proton-therapy/include/CommandMessenger.hh \
- /usr/local/include/Geant4/G4UImessenger.hh \
- /usr/local/include/Geant4/G4UIdirectory.hh \
- /usr/local/include/Geant4/G4UIcommand.hh \
- /usr/local/include/Geant4/G4ApplicationState.hh \
- /usr/local/include/Geant4/G4ThreeVector.hh \
- /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.h \
- /usr/local/include/Geant4/CLHEP/Utility/defs.h \
- /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.icc \
- /usr/local/include/Geant4/G4UIparameter.hh \
- /usr/local/include/Geant4/G4UIcmdWithAString.hh \
- /usr/local/include/Geant4/G4UIcmdWithADoubleAndUnit.hh \
  /usr/local/include/Geant4/G4Box.hh \
  /usr/local/include/Geant4/G4GeomTypes.hh \
  /usr/local/include/Geant4/G4GeomConfig.hh \
  /usr/local/include/Geant4/G4CSGSolid.hh \
  /usr/local/include/Geant4/G4VSolid.hh \
  /usr/local/include/Geant4/geomdefs.hh \
+ /usr/local/include/Geant4/G4ThreeVector.hh \
+ /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.h \
+ /usr/local/include/Geant4/CLHEP/Utility/defs.h \
+ /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.icc \
  /usr/local/include/Geant4/G4VSolid.icc \
  /usr/local/include/Geant4/G4Polyhedron.hh \
  /usr/local/include/Geant4/HepPolyhedron.h \

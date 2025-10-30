@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/main.dir/main.cc.o"
   "CMakeFiles/main.dir/main.cc.o.d"
-  "CMakeFiles/main.dir/src/CommandMessenger.cc.o"
-  "CMakeFiles/main.dir/src/CommandMessenger.cc.o.d"
   "CMakeFiles/main.dir/src/DetectorConstruction.cc.o"
   "CMakeFiles/main.dir/src/DetectorConstruction.cc.o.d"
   "CMakeFiles/main.dir/src/EventAction.cc.o"

@@ -1,5 +1,6 @@
 #include "RunAction.hh"
 #include "SteppingAction.hh"
+#include "DetectorConstruction.hh"
 
 #include "G4Run.hh"
 #include "G4SystemOfUnits.hh"
@@ -30,7 +31,7 @@ void RunAction::BeginOfRunAction(const G4Run* run)
 void RunAction::EndOfRunAction(const G4Run* run)
 {
     G4double avgEdep = fTotalEnergyDeposit / fEventCount;
-    G4double detMass =8.9e-13 * kg;
+    G4double detMass =SheildVolume;
     G4double dose = avgEdep / detMass;
 
     std::ofstream out("dose_output.txt", std::ios::app);

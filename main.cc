@@ -38,9 +38,11 @@ int main(int argc, char **argv)
     runManager->SetUserInitialization(physicsList);
 
     runManager->SetUserAction(new PrimaryGeneratorAction);
-    auto runAction = new RunAction();
-    auto eventAction = new EventAction(runAction);
-    auto steppingAction = new SteppingAction(eventAction);
+
+    auto runAction = new RunAction(detConstruction); 
+    auto eventAction = new EventAction(runAction);  
+    auto steppingAction = new SteppingAction(eventAction); 
+
     runManager->SetUserAction(runAction);
     runManager->SetUserAction(eventAction);
     runManager->SetUserAction(steppingAction);

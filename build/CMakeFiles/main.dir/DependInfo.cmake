@@ -9,7 +9,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/qiqi/geant4/Proton-therapy/main.cc" "CMakeFiles/main.dir/main.cc.o" "gcc" "CMakeFiles/main.dir/main.cc.o.d"
-  "/home/qiqi/geant4/Proton-therapy/src/CommandMessenger.cc" "CMakeFiles/main.dir/src/CommandMessenger.cc.o" "gcc" "CMakeFiles/main.dir/src/CommandMessenger.cc.o.d"
   "/home/qiqi/geant4/Proton-therapy/src/DetectorConstruction.cc" "CMakeFiles/main.dir/src/DetectorConstruction.cc.o" "gcc" "CMakeFiles/main.dir/src/DetectorConstruction.cc.o.d"
   "/home/qiqi/geant4/Proton-therapy/src/EventAction.cc" "CMakeFiles/main.dir/src/EventAction.cc.o" "gcc" "CMakeFiles/main.dir/src/EventAction.cc.o.d"
   "/home/qiqi/geant4/Proton-therapy/src/PhysicsList.cc" "CMakeFiles/main.dir/src/PhysicsList.cc.o" "gcc" "CMakeFiles/main.dir/src/PhysicsList.cc.o.d"
