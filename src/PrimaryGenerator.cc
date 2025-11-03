@@ -13,7 +13,7 @@ PrimaryGeneratorAction::PrimaryGeneratorAction()
     auto particle = particleTable->FindParticle("gamma");
 
     fParticleGun->SetParticleDefinition(particle);
-    fParticleGun->SetParticleEnergy(1.0 * MeV);
+    fParticleGun->SetParticleEnergy(10.0 * MeV);
     fParticleGun->SetParticlePosition(G4ThreeVector(0, 0, -10.5 * cm)); 
     fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0, 0, 1)); 
 }

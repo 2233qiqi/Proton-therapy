@@ -38,10 +38,12 @@ void RunAction::BeginOfRunAction(const G4Run* run)
 
 void RunAction::EndOfRunAction(const G4Run* run)
 {
-    if (fEventCount == 0) return;
+    G4int totalEvents = run->GetNumberOfEvent();
 
-    G4cout << "penetrate event: " << fEventCount << G4endl; //调试
+    G4cout << "penetrate event: " << fEventCount << G4endl; 
     
+    if (totalEvents == 0) return; 
+
     G4double detMass = 0.0;
     if (fDetConstruction) {
         detMass = fDetConstruction->GetDetectorMass(); 
@@ -52,21 +54,23 @@ void RunAction::EndOfRunAction(const G4Run* run)
         return;
     }
     
-    G4double avgEdep_internal = fTotalEnergyDeposit / (G4double)fEventCount; 
-    G4double avgEdep_Joule = avgEdep_internal / CLHEP::joule;
+    G4double avgEdep_perEvent = fTotalEnergyDeposit / (G4double)totalEvents;
+    G4double avgEdep_Joule = avgEdep_perEvent / CLHEP::joule;
     G4double dose = avgEdep_Joule / detMass; 
 
-     G4cout << "detmass: " << detMass <<" kg"<< G4endl; //调试
-
+    G4cout << "detmass: " << detMass <<" kg"<< G4endl; 
     std::ofstream out("dose_output.txt", std::ios::app);
     out << std::fixed << std::setprecision(6)
         << run->GetRunID() << " "
         << dose / CLHEP::gray << G4endl; 
     out.close();
 
-    G4cout << "Run " << run->GetRunID() << " ended. Total_Dose: " << dose / CLHEP::gray << " Gy" << G4endl;
+    G4cout << "Run " << run->GetRunID() << " ended. Dose: " << dose / CLHEP::gray << " Gy" << G4endl;
 
- 
+    if (totalEvents > 0) {
+        G4double ratio = (G4double)fEventCount / totalEvents * 100.0;
+        G4cout << "Penetration Ratio: " << ratio << " % (" << fEventCount << "/" << totalEvents << ")" << G4endl;
+    }
 }
 
 
