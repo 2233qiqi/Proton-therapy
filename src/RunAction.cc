@@ -53,24 +53,17 @@ void RunAction::EndOfRunAction(const G4Run* run)
         G4cerr << " Dose calculation failed." << G4endl;
         return;
     }
-    
-    G4double avgEdep_perEvent = fTotalEnergyDeposit / (G4double)totalEvents;
-    G4double avgEdep_Joule = avgEdep_perEvent / CLHEP::joule;
-    G4double dose = avgEdep_Joule / detMass; 
 
+    G4double avgEdep_perEvent_Joule = fTotalEnergyDeposit / (G4double)totalEvents; 
+    
+    G4double dose = avgEdep_perEvent_Joule / detMass; 
     G4cout << "detmass: " << detMass <<" kg"<< G4endl; 
     std::ofstream out("dose_output.txt", std::ios::app);
-    out << std::fixed << std::setprecision(6)
+    out << std::fixed << std::setprecision(10)
         << run->GetRunID() << " "
-        << dose / CLHEP::gray << G4endl; 
+        << dose << G4endl; 
     out.close();
 
-    G4cout << "Run " << run->GetRunID() << " ended. Dose: " << dose / CLHEP::gray << " Gy" << G4endl;
-
-    if (totalEvents > 0) {
-        G4double ratio = (G4double)fEventCount / totalEvents * 100.0;
-        G4cout << "Penetration Ratio: " << ratio << " % (" << fEventCount << "/" << totalEvents << ")" << G4endl;
-    }
+    G4cout << "Run " << run->GetRunID() << " ended. Dose: " << dose << " Gy" << G4endl;
 }
-
 
