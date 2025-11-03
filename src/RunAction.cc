@@ -56,14 +56,18 @@ void RunAction::EndOfRunAction(const G4Run* run)
 
     G4double avgEdep_perEvent_Joule = fTotalEnergyDeposit / (G4double)totalEvents; 
     
-    G4double dose = avgEdep_perEvent_Joule / detMass; 
+    G4double dose = fTotalEnergyDeposit / (CLHEP::joule * (G4double)totalEvents * detMass); 
+    
     G4cout << "detmass: " << detMass <<" kg"<< G4endl; 
+
+    G4double dose_gy = dose / CLHEP::gray;
+    
     std::ofstream out("dose_output.txt", std::ios::app);
-    out << std::fixed << std::setprecision(10)
+    out << std::fixed << std::setprecision(15)
         << run->GetRunID() << " "
-        << dose << G4endl; 
+        << dose_gy << G4endl; 
     out.close();
 
-    G4cout << "Run " << run->GetRunID() << " ended. Dose: " << dose << " Gy" << G4endl;
+    G4cout << "Run " << run->GetRunID() << " ended. Dose: " << dose_gy << " Gy" << G4endl;
 }
 
