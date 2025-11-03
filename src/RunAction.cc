@@ -45,6 +45,7 @@ void RunAction::EndOfRunAction(const G4Run* run)
     if (totalEvents == 0) return; 
 
     G4double detMass = 0.0;
+    const G4double manual_Joule_per_MeV = 1.602176634e-13;
     if (fDetConstruction) {
         detMass = fDetConstruction->GetDetectorMass(); 
     }
@@ -54,20 +55,20 @@ void RunAction::EndOfRunAction(const G4Run* run)
         return;
     }
 
-    G4double avgEdep_perEvent_Joule = fTotalEnergyDeposit / (G4double)totalEvents; 
+    G4double avgEdep_perEvent = fTotalEnergyDeposit / (G4double)totalEvents;
     
-    G4double dose = fTotalEnergyDeposit / (CLHEP::joule * (G4double)totalEvents * detMass); 
-    
-    G4cout << "detmass: " << detMass <<" kg"<< G4endl; 
+    G4double avgEdep_Joule = avgEdep_perEvent * manual_Joule_per_MeV; 
+    G4double dose = avgEdep_Joule / detMass; 
 
-    G4double dose_gy = dose / CLHEP::gray;
+    G4cout << "detmass: " << detMass <<" kg"<< G4endl; 
     
     std::ofstream out("dose_output.txt", std::ios::app);
-    out << std::fixed << std::setprecision(15)
+    out << std::fixed << std::setprecision(18) 
         << run->GetRunID() << " "
-        << dose_gy << G4endl; 
+        << dose << G4endl; 
     out.close();
 
-    G4cout << "Run " << run->GetRunID() << " ended. Dose: " << dose_gy << " Gy" << G4endl;
+    G4cout << "Run " << run->GetRunID() << " ended. Dose: " << dose << " Gy" << G4endl;
+    
 }
 
