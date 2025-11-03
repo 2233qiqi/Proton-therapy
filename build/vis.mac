@@ -12,7 +12,7 @@
 /vis/viewer/set/style wireframe
 /vis/viewer/set/auxiliaryEdge true
 /vis/viewer/set/lineSegmentsPerCircle 1000  # Uncommented and set to 1000 for smooth curves
-/vis/viewer/zoom 5
+/vis/viewer/zoom 2
 
 
 /vis/scene/add/trajectories smooth

@@ -64,7 +64,7 @@ void RunAction::EndOfRunAction(const G4Run* run)
         << dose / CLHEP::gray << G4endl; 
     out.close();
 
-    G4cout << "Run " << run->GetRunID() << " ended. Dose: " << dose / CLHEP::gray << " Gy/Sv." << G4endl;
+    G4cout << "Run " << run->GetRunID() << " ended. Total_Dose: " << dose / CLHEP::gray << " Gy" << G4endl;
 
  
 }

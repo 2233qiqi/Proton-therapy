@@ -13,7 +13,7 @@
 DetectorConstruction::DetectorConstruction()
     : 
       fShieldMaterialName("G4_Pb"),
-      fShieldThickness(1.0 * cm)
+      fShieldThickness(5.0 * cm)
 {}
 
 DetectorConstruction::~DetectorConstruction()
@@ -27,7 +27,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
     G4bool checkOverlaps = true;
 
     // world
-    G4double worldSize = 2.0 * m;
+    G4double worldSize = 5.0 * m;
     G4Material *worldmat = nist ->FindOrBuildMaterial("G4_AIR");
 
     auto solidWorld = new G4Box("World", worldSize/2, worldSize/2, worldSize/2);
@@ -62,13 +62,13 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 
     // Detector 
     G4double detZ = 1.0 * mm; 
-
+    G4double distantZ = 100.0 *cm;
     G4Material* detMat = nist->FindOrBuildMaterial("G4_WATER"); 
 
     auto solidDet = new G4Box("Detector", shieldX/2, shieldY/2, detZ/2);
     auto logicalDet = new G4LogicalVolume(solidDet,detMat,"Detector");
     auto physDet = new G4PVPlacement(nullptr,
-                      G4ThreeVector(0, 0, shieldZ/2+detZ/2),
+                      G4ThreeVector(0, 0, shieldZ/2+distantZ),
                       logicalDet,
                       "Detector",
                       logicWorld,
