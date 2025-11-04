@@ -62,19 +62,21 @@ int main(int argc, char **argv)
         if (argc > 2) {
             G4String matCmd = "/shield/material " + G4String(argv[2]);
             UImanager->ApplyCommand(matCmd);
-            G4cout << "-> Shield Material set to: " << argv[2] << G4endl;
         }
         
         if (argc > 3) {
             G4String thickCmd = "/shield/thickness " + G4String(argv[3]);
             UImanager->ApplyCommand(thickCmd);
-            G4cout << "-> Shield Thickness set to: " << argv[3] << G4endl;
         }
         
         if (argc > 4) {
             G4String particleCmd = "/gun/particle " + G4String(argv[4]);
             UImanager->ApplyCommand(particleCmd);
-            G4cout << "-> Particle Type set to: " << argv[4] << G4endl;
+        }
+
+        if (argc > 5){
+            G4String enegerycmd = "/gun/energy " + G4String(argv[5]);
+            UImanager->ApplyCommand(enegerycmd);
         }
 
         UImanager->ApplyCommand("/control/execute vis.mac");
@@ -87,6 +89,7 @@ int main(int argc, char **argv)
    
     else 
     {
+        G4cout <<"默认"<<G4endl;
         UImanager->ApplyCommand("/control/execute vis.mac");
         UImanager->ApplyCommand("/control/execute run.mac");
 
@@ -100,4 +103,4 @@ int main(int argc, char **argv)
     delete runManager;
     return 0;
 }
-//例子：./main run.mac G4_WATER 5.0*cm gamma
+//例子：./main run.mac G4_WATER 5.0*cm gamma 1.0 Mev
