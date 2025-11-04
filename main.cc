@@ -4,6 +4,7 @@
 #include "G4SteppingVerbose.hh"
 #include "G4VisExecutive.hh"
 
+// 假设这些头文件都已正确定义
 #include "DetectorConstruction.hh"
 #include "PhysicsList.hh"
 #include "PrimaryGenerator.hh"
@@ -13,6 +14,7 @@
 
 #include <string>
 
+// (保留，虽然目前代码中未使用，但保持完整性)
 bool isMacroFile(const char* filename)
 {
     std::string str(filename);
@@ -21,11 +23,9 @@ bool isMacroFile(const char* filename)
 
 int main(int argc, char **argv)
 {
-    G4UIExecutive* ui = nullptr;
-    if (argc == 1) {
-        ui = new G4UIExecutive(argc, argv);
-    }
-
+   
+    G4UIExecutive* ui = new G4UIExecutive(argc, argv); 
+    
     G4SteppingVerbose::UseBestUnit(4);
 
     auto runManager = G4RunManagerFactory::CreateRunManager(G4RunManagerType::Serial);
@@ -40,7 +40,7 @@ int main(int argc, char **argv)
     runManager->SetUserAction(new PrimaryGeneratorAction);
 
     auto runAction = new RunAction(detConstruction); 
-    auto eventAction = new EventAction(runAction);  
+    auto eventAction = new EventAction(runAction);
     auto steppingAction = new SteppingAction(eventAction); 
 
     runManager->SetUserAction(runAction);
@@ -54,11 +54,10 @@ int main(int argc, char **argv)
 
     auto UImanager = G4UImanager::GetUIpointer();
 
-    if (argc > 1)
+   
+    
+    if (argc > 1) 
     {
-        G4String firstCmd = "/control/execute " + G4String(argv[1]);
-        UImanager->ApplyCommand(firstCmd);
-
         if (argc > 2) {
             G4String matCmd = "/shield/material " + G4String(argv[2]);
             UImanager->ApplyCommand(matCmd);
@@ -74,33 +73,36 @@ int main(int argc, char **argv)
             UImanager->ApplyCommand(particleCmd);
         }
 
-        if (argc > 5){
+        if (argc > 5) {
             G4String enegerycmd = "/gun/energy " + G4String(argv[5]);
             UImanager->ApplyCommand(enegerycmd);
         }
 
         UImanager->ApplyCommand("/control/execute vis.mac");
-        UImanager->ApplyCommand("/control/execute run.mac");
-        
-        delete visManager;
-        delete runManager;
-        return 0;
-    }
+        G4String runMacroCmd = "/control/execute " + G4String(argv[1]);
+        UImanager->ApplyCommand(runMacroCmd);
    
-    else 
-    {
-        G4cout <<"默认"<<G4endl;
-        UImanager->ApplyCommand("/control/execute vis.mac");
-        UImanager->ApplyCommand("/control/execute run.mac");
 
         if (ui) {
+            ui->SessionStart(); 
+        }
+
+    }
+    else 
+    {
+        G4cout << "\n--- 交互式模式：启动默认设置 ---" << G4endl;
+        
+        UImanager->ApplyCommand("/control/execute vis.mac");
+        
+        if (ui) {
             ui->SessionStart();
-            delete ui;
         }
     }
     
+    delete ui; 
     delete visManager;
     delete runManager;
+
     return 0;
 }
-//例子：./main run.mac G4_WATER 5.0*cm gamma 1.0 Mev
+
