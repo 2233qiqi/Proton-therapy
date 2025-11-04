@@ -58,7 +58,7 @@ int main(int argc, char **argv)
     {
         G4String command = "/control/execute " + G4String(argv[1]);
         UImanager->ApplyCommand(command);
-
+     
         delete visManager;
         delete runManager;
         return 0;

@@ -8,14 +8,7 @@
 PrimaryGeneratorAction::PrimaryGeneratorAction()
 {
     fParticleGun = new G4ParticleGun(1); 
-
-    auto particleTable = G4ParticleTable::GetParticleTable();
-    auto particle = particleTable->FindParticle("gamma");
-
-    fParticleGun->SetParticleDefinition(particle);
-    fParticleGun->SetParticleEnergy(1.0 * MeV);
-    fParticleGun->SetParticlePosition(G4ThreeVector(0, 0, -10.5 * cm)); 
-    fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0, 0, 1)); 
+    fParticleGun->SetParticleEnergy(1.0 * MeV); 
 }
 
 PrimaryGeneratorAction::~PrimaryGeneratorAction()
@@ -25,10 +18,10 @@ PrimaryGeneratorAction::~PrimaryGeneratorAction()
 
 void PrimaryGeneratorAction::GeneratePrimaries(G4Event* event)
 {
+   
     fParticleGun->GeneratePrimaryVertex(event);
 }
 
-//commands
 void PrimaryGeneratorAction::SetEnergy(G4double energy_MeV)
 {
     fParticleGun->SetParticleEnergy(energy_MeV * MeV);
@@ -44,4 +37,3 @@ void PrimaryGeneratorAction::SetParticle(G4String particleName)
         G4cerr << "### Particle [" << particleName << "] not found!" << G4endl;
     }
 }
-
