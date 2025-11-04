@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/main.cc.o.d"
   "CMakeFiles/main.dir/src/DetectorConstruction.cc.o"
   "CMakeFiles/main.dir/src/DetectorConstruction.cc.o.d"
+  "CMakeFiles/main.dir/src/DetectorMessenger.cc.o"
+  "CMakeFiles/main.dir/src/DetectorMessenger.cc.o.d"
   "CMakeFiles/main.dir/src/EventAction.cc.o"
   "CMakeFiles/main.dir/src/EventAction.cc.o.d"
   "CMakeFiles/main.dir/src/PhysicsList.cc.o"

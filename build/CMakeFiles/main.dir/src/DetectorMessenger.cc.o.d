@@ -1,8 +1,12 @@
-CMakeFiles/main.dir/src/EventAction.cc.o: \
- /home/qiqi/geant4/Proton-therapy/src/EventAction.cc \
+CMakeFiles/main.dir/src/DetectorMessenger.cc.o: \
+ /home/qiqi/geant4/Proton-therapy/src/DetectorMessenger.cc \
  /usr/include/stdc-predef.h \
- /home/qiqi/geant4/Proton-therapy/include/EventAction.hh \
- /usr/local/include/Geant4/G4UserEventAction.hh \
+ /home/qiqi/geant4/Proton-therapy/include/DetectorMessenger.hh \
+ /usr/local/include/Geant4/G4UImessenger.hh \
+ /usr/local/include/Geant4/G4UIdirectory.hh \
+ /usr/local/include/Geant4/G4UIcommand.hh \
+ /usr/local/include/Geant4/G4ApplicationState.hh \
+ /usr/local/include/Geant4/G4ThreeVector.hh \
  /usr/local/include/Geant4/globals.hh /usr/local/include/Geant4/G4ios.hh \
  /usr/local/include/Geant4/G4Types.hh \
  /usr/local/include/Geant4/G4GlobalConfig.hh /usr/include/c++/13/complex \
@@ -223,25 +227,18 @@ CMakeFiles/main.dir/src/EventAction.cc.o: \
  /usr/include/c++/13/bits/parse_numbers.h \
  /usr/include/c++/13/bits/std_mutex.h \
  /usr/include/c++/13/bits/unique_lock.h \
- /home/qiqi/geant4/Proton-therapy/include/RunAction.hh \
- /usr/local/include/Geant4/G4UserRunAction.hh \
- /home/qiqi/geant4/Proton-therapy/include/DetectorConstruction.hh \
- /usr/local/include/Geant4/G4VUserDetectorConstruction.hh \
- /usr/local/include/Geant4/globals.hh /usr/include/c++/13/vector \
+ /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.h \
+ /usr/local/include/Geant4/CLHEP/Utility/defs.h \
+ /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.icc \
+ /usr/local/include/Geant4/G4UIparameter.hh /usr/include/c++/13/vector \
  /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /usr/local/include/Geant4/G4SystemOfUnits.hh \
- /usr/local/include/Geant4/CLHEP/Units/SystemOfUnits.h \
- /usr/local/include/Geant4/G4UImessenger.hh \
- /usr/local/include/Geant4/G4UIdirectory.hh \
- /usr/local/include/Geant4/G4UIcommand.hh \
- /usr/local/include/Geant4/G4ApplicationState.hh \
- /usr/local/include/Geant4/G4ThreeVector.hh \
- /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.h \
- /usr/local/include/Geant4/CLHEP/Utility/defs.h \
- /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.icc \
- /usr/local/include/Geant4/G4UIparameter.hh \
  /usr/local/include/Geant4/G4UIcmdWithADoubleAndUnit.hh \
- /usr/local/include/Geant4/G4UIcmdWithAString.hh
+ /usr/local/include/Geant4/G4UIcmdWithAString.hh \
+ /usr/local/include/Geant4/globals.hh \
+ /home/qiqi/geant4/Proton-therapy/include/DetectorConstruction.hh \
+ /usr/local/include/Geant4/G4VUserDetectorConstruction.hh \
+ /usr/local/include/Geant4/G4SystemOfUnits.hh \
+ /usr/local/include/Geant4/CLHEP/Units/SystemOfUnits.h

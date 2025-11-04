@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/qiqi/geant4/Proton-therapy/main.cc" "CMakeFiles/main.dir/main.cc.o" "gcc" "CMakeFiles/main.dir/main.cc.o.d"
   "/home/qiqi/geant4/Proton-therapy/src/DetectorConstruction.cc" "CMakeFiles/main.dir/src/DetectorConstruction.cc.o" "gcc" "CMakeFiles/main.dir/src/DetectorConstruction.cc.o.d"
+  "/home/qiqi/geant4/Proton-therapy/src/DetectorMessenger.cc" "CMakeFiles/main.dir/src/DetectorMessenger.cc.o" "gcc" "CMakeFiles/main.dir/src/DetectorMessenger.cc.o.d"
   "/home/qiqi/geant4/Proton-therapy/src/EventAction.cc" "CMakeFiles/main.dir/src/EventAction.cc.o" "gcc" "CMakeFiles/main.dir/src/EventAction.cc.o.d"
   "/home/qiqi/geant4/Proton-therapy/src/PhysicsList.cc" "CMakeFiles/main.dir/src/PhysicsList.cc.o" "gcc" "CMakeFiles/main.dir/src/PhysicsList.cc.o.d"
   "/home/qiqi/geant4/Proton-therapy/src/PrimaryGenerator.cc" "CMakeFiles/main.dir/src/PrimaryGenerator.cc.o" "gcc" "CMakeFiles/main.dir/src/PrimaryGenerator.cc.o.d"

@@ -1,6 +1,10 @@
+/shield/material G4_Pb
+/shield/thickness 8.0 cm
+
 /gun/particle gamma
 /gun/energy 1.0 MeV
 /gun/position 0 0 -10.5 cm
 /gun/direction 0 0 1
+
 /run/initialize
 /run/beamOn 10000

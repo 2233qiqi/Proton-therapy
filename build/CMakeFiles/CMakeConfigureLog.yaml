@@ -61,8 +61,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-RGNXTd"
-      binary: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-RGNXTd"
+      source: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-pv4hzK"
+      binary: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-pv4hzK"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -71,13 +71,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-RGNXTd'
+        Change Dir: '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-pv4hzK'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7b405/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_7b405.dir/build.make CMakeFiles/cmTC_7b405.dir/build
-        gmake[1]: Entering directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-RGNXTd'
-        Building C object CMakeFiles/cmTC_7b405.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -v -o CMakeFiles/cmTC_7b405.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c37e6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c37e6.dir/build.make CMakeFiles/cmTC_c37e6.dir/build
+        gmake[1]: Entering directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-pv4hzK'
+        Building C object CMakeFiles/cmTC_c37e6.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_c37e6.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -87,8 +87,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7b405.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7b405.dir/'
-         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_7b405.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccCA0AyB.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c37e6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c37e6.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_c37e6.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc7wQepT.s
         GNU C17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)
         	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
         
@@ -105,15 +105,15 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: 38987c28e967c64056a6454abdef726e
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7b405.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7b405.dir/'
-         as -v --64 -o CMakeFiles/cmTC_7b405.dir/CMakeCCompilerABI.c.o /tmp/ccCA0AyB.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c37e6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c37e6.dir/'
+         as -v --64 -o CMakeFiles/cmTC_c37e6.dir/CMakeCCompilerABI.c.o /tmp/cc7wQepT.s
         GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
         COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7b405.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7b405.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_7b405
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b405.dir/link.txt --verbose=1
-        /usr/bin/cc  -v CMakeFiles/cmTC_7b405.dir/CMakeCCompilerABI.c.o -o cmTC_7b405 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c37e6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c37e6.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_c37e6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c37e6.dir/link.txt --verbose=1
+        /usr/bin/cc  -v CMakeFiles/cmTC_c37e6.dir/CMakeCCompilerABI.c.o -o cmTC_c37e6 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
@@ -126,10 +126,10 @@ events:
         gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
         COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7b405' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7b405.'
-         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgZAqPD.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_7b405 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_7b405.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7b405' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7b405.'
-        gmake[1]: Leaving directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-RGNXTd'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c37e6' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c37e6.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccLKBq42.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_c37e6 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_c37e6.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c37e6' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c37e6.'
+        gmake[1]: Leaving directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-pv4hzK'
         
       exitCode: 0
   -
@@ -163,13 +163,13 @@ events:
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-RGNXTd']
+        ignore line: [Change Dir: '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-pv4hzK']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7b405/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_7b405.dir/build.make CMakeFiles/cmTC_7b405.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-RGNXTd']
-        ignore line: [Building C object CMakeFiles/cmTC_7b405.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_7b405.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c37e6/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_c37e6.dir/build.make CMakeFiles/cmTC_c37e6.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-pv4hzK']
+        ignore line: [Building C object CMakeFiles/cmTC_c37e6.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_c37e6.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -179,8 +179,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7b405.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7b405.dir/']
-        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_7b405.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccCA0AyB.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c37e6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c37e6.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_c37e6.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc7wQepT.s]
         ignore line: [GNU C17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
         ignore line: []
@@ -197,15 +197,15 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 38987c28e967c64056a6454abdef726e]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7b405.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7b405.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_7b405.dir/CMakeCCompilerABI.c.o /tmp/ccCA0AyB.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c37e6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c37e6.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_c37e6.dir/CMakeCCompilerABI.c.o /tmp/cc7wQepT.s]
         ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7b405.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7b405.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_7b405]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b405.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_7b405.dir/CMakeCCompilerABI.c.o -o cmTC_7b405 ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c37e6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c37e6.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_c37e6]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c37e6.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_c37e6.dir/CMakeCCompilerABI.c.o -o cmTC_c37e6 ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
@@ -218,13 +218,13 @@ events:
         ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7b405' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7b405.']
-        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgZAqPD.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_7b405 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_7b405.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c37e6' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c37e6.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccLKBq42.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_c37e6 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_c37e6.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccgZAqPD.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccLKBq42.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -242,7 +242,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_7b405] ==> ignore
+          arg [cmTC_c37e6] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
@@ -254,7 +254,7 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
-          arg [CMakeFiles/cmTC_7b405.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_c37e6.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
           arg [--as-needed] ==> ignore
@@ -294,8 +294,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-ql6Z8a"
-      binary: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-ql6Z8a"
+      source: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-MsiZFg"
+      binary: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-MsiZFg"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -304,13 +304,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-ql6Z8a'
+        Change Dir: '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-MsiZFg'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_046de/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_046de.dir/build.make CMakeFiles/cmTC_046de.dir/build
-        gmake[1]: Entering directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-ql6Z8a'
-        Building CXX object CMakeFiles/cmTC_046de.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_046de.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3878b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3878b.dir/build.make CMakeFiles/cmTC_3878b.dir/build
+        gmake[1]: Entering directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-MsiZFg'
+        Building CXX object CMakeFiles/cmTC_3878b.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_3878b.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -320,8 +320,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_046de.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_046de.dir/'
-         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_046de.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc0kfvW3.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3878b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3878b.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_3878b.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccux0qje.s
         GNU C++17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)
         	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
         
@@ -342,15 +342,15 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: c81c05345ce537099dafd5580045814a
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_046de.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_046de.dir/'
-         as -v --64 -o CMakeFiles/cmTC_046de.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc0kfvW3.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3878b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3878b.dir/'
+         as -v --64 -o CMakeFiles/cmTC_3878b.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccux0qje.s
         GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
         COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_046de.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_046de.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_046de
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_046de.dir/link.txt --verbose=1
-        /usr/bin/c++  -v CMakeFiles/cmTC_046de.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_046de 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3878b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3878b.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_3878b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3878b.dir/link.txt --verbose=1
+        /usr/bin/c++  -v CMakeFiles/cmTC_3878b.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_3878b 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
@@ -363,10 +363,10 @@ events:
         gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
         COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_046de' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_046de.'
-         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccoDkBSx.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_046de /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_046de.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_046de' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_046de.'
-        gmake[1]: Leaving directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-ql6Z8a'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3878b' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_3878b.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccezklEV.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_3878b /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_3878b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3878b' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_3878b.'
+        gmake[1]: Leaving directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-MsiZFg'
         
       exitCode: 0
   -
@@ -406,13 +406,13 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-ql6Z8a']
+        ignore line: [Change Dir: '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-MsiZFg']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_046de/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_046de.dir/build.make CMakeFiles/cmTC_046de.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-ql6Z8a']
-        ignore line: [Building CXX object CMakeFiles/cmTC_046de.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_046de.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3878b/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_3878b.dir/build.make CMakeFiles/cmTC_3878b.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-MsiZFg']
+        ignore line: [Building CXX object CMakeFiles/cmTC_3878b.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_3878b.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -422,8 +422,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_046de.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_046de.dir/']
-        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_046de.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc0kfvW3.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3878b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3878b.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_3878b.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccux0qje.s]
         ignore line: [GNU C++17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
         ignore line: []
@@ -444,15 +444,15 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: c81c05345ce537099dafd5580045814a]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_046de.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_046de.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_046de.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc0kfvW3.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3878b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3878b.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_3878b.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccux0qje.s]
         ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_046de.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_046de.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_046de]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_046de.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_046de.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_046de ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3878b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3878b.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_3878b]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3878b.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_3878b.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_3878b ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
@@ -465,13 +465,13 @@ events:
         ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_046de' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_046de.']
-        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccoDkBSx.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_046de /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_046de.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3878b' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_3878b.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccezklEV.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_3878b /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_3878b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccoDkBSx.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccezklEV.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -489,7 +489,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_046de] ==> ignore
+          arg [cmTC_3878b] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
@@ -501,7 +501,7 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
-          arg [CMakeFiles/cmTC_046de.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_3878b.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -543,8 +543,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-4SW3uB"
-      binary: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-4SW3uB"
+      source: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-2GgZMP"
+      binary: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-2GgZMP"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -554,17 +554,17 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-4SW3uB'
+        Change Dir: '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-2GgZMP'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bea5c/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_bea5c.dir/build.make CMakeFiles/cmTC_bea5c.dir/build
-        gmake[1]: Entering directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-4SW3uB'
-        Building C object CMakeFiles/cmTC_bea5c.dir/src.c.o
-        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_bea5c.dir/src.c.o -c /home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-4SW3uB/src.c
-        Linking C executable cmTC_bea5c
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bea5c.dir/link.txt --verbose=1
-        /usr/bin/cc CMakeFiles/cmTC_bea5c.dir/src.c.o -o cmTC_bea5c 
-        gmake[1]: Leaving directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-4SW3uB'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_21c38/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_21c38.dir/build.make CMakeFiles/cmTC_21c38.dir/build
+        gmake[1]: Entering directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-2GgZMP'
+        Building C object CMakeFiles/cmTC_21c38.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_21c38.dir/src.c.o -c /home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-2GgZMP/src.c
+        Linking C executable cmTC_21c38
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_21c38.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_21c38.dir/src.c.o -o cmTC_21c38 
+        gmake[1]: Leaving directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-2GgZMP'
         
       exitCode: 0
   -
@@ -578,8 +578,8 @@ events:
     checks:
       - "Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so"
     directories:
-      source: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-w36hXV"
-      binary: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-w36hXV"
+      source: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-Kd8FWA"
+      binary: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-Kd8FWA"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -589,17 +589,17 @@ events:
       variable: "X11_LIB_X11_SOLO"
       cached: true
       stdout: |
-        Change Dir: '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-w36hXV'
+        Change Dir: '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-Kd8FWA'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_188d1/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_188d1.dir/build.make CMakeFiles/cmTC_188d1.dir/build
-        gmake[1]: Entering directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-w36hXV'
-        Building C object CMakeFiles/cmTC_188d1.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -o CMakeFiles/cmTC_188d1.dir/CheckFunctionExists.c.o -c /home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-w36hXV/CheckFunctionExists.c
-        Linking C executable cmTC_188d1
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_188d1.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay CMakeFiles/cmTC_188d1.dir/CheckFunctionExists.c.o -o cmTC_188d1  /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so 
-        gmake[1]: Leaving directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-w36hXV'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_97f1c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_97f1c.dir/build.make CMakeFiles/cmTC_97f1c.dir/build
+        gmake[1]: Entering directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-Kd8FWA'
+        Building C object CMakeFiles/cmTC_97f1c.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -o CMakeFiles/cmTC_97f1c.dir/CheckFunctionExists.c.o -c /home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-Kd8FWA/CheckFunctionExists.c
+        Linking C executable cmTC_97f1c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_97f1c.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay CMakeFiles/cmTC_97f1c.dir/CheckFunctionExists.c.o -o cmTC_97f1c  /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so 
+        gmake[1]: Leaving directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-Kd8FWA'
         
       exitCode: 0
   -
@@ -613,8 +613,8 @@ events:
     checks:
       - "Looking for gethostbyname"
     directories:
-      source: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-tgbP4X"
-      binary: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-tgbP4X"
+      source: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-bV4v6L"
+      binary: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-bV4v6L"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -624,17 +624,17 @@ events:
       variable: "CMAKE_HAVE_GETHOSTBYNAME"
       cached: true
       stdout: |
-        Change Dir: '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-tgbP4X'
+        Change Dir: '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-bV4v6L'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_12d9f/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_12d9f.dir/build.make CMakeFiles/cmTC_12d9f.dir/build
-        gmake[1]: Entering directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-tgbP4X'
-        Building C object CMakeFiles/cmTC_12d9f.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -o CMakeFiles/cmTC_12d9f.dir/CheckFunctionExists.c.o -c /home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-tgbP4X/CheckFunctionExists.c
-        Linking C executable cmTC_12d9f
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12d9f.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname CMakeFiles/cmTC_12d9f.dir/CheckFunctionExists.c.o -o cmTC_12d9f 
-        gmake[1]: Leaving directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-tgbP4X'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b58f9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b58f9.dir/build.make CMakeFiles/cmTC_b58f9.dir/build
+        gmake[1]: Entering directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-bV4v6L'
+        Building C object CMakeFiles/cmTC_b58f9.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -o CMakeFiles/cmTC_b58f9.dir/CheckFunctionExists.c.o -c /home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-bV4v6L/CheckFunctionExists.c
+        Linking C executable cmTC_b58f9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b58f9.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname CMakeFiles/cmTC_b58f9.dir/CheckFunctionExists.c.o -o cmTC_b58f9 
+        gmake[1]: Leaving directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-bV4v6L'
         
       exitCode: 0
   -
@@ -648,8 +648,8 @@ events:
     checks:
       - "Looking for connect"
     directories:
-      source: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-VVsi2j"
-      binary: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-VVsi2j"
+      source: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-C497yy"
+      binary: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-C497yy"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -659,17 +659,17 @@ events:
       variable: "CMAKE_HAVE_CONNECT"
       cached: true
       stdout: |
-        Change Dir: '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-VVsi2j'
+        Change Dir: '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-C497yy'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_99c28/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_99c28.dir/build.make CMakeFiles/cmTC_99c28.dir/build
-        gmake[1]: Entering directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-VVsi2j'
-        Building C object CMakeFiles/cmTC_99c28.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect -o CMakeFiles/cmTC_99c28.dir/CheckFunctionExists.c.o -c /home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-VVsi2j/CheckFunctionExists.c
-        Linking C executable cmTC_99c28
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_99c28.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_99c28.dir/CheckFunctionExists.c.o -o cmTC_99c28 
-        gmake[1]: Leaving directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-VVsi2j'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_640aa/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_640aa.dir/build.make CMakeFiles/cmTC_640aa.dir/build
+        gmake[1]: Entering directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-C497yy'
+        Building C object CMakeFiles/cmTC_640aa.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect -o CMakeFiles/cmTC_640aa.dir/CheckFunctionExists.c.o -c /home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-C497yy/CheckFunctionExists.c
+        Linking C executable cmTC_640aa
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_640aa.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_640aa.dir/CheckFunctionExists.c.o -o cmTC_640aa 
+        gmake[1]: Leaving directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-C497yy'
         
       exitCode: 0
   -
@@ -683,8 +683,8 @@ events:
     checks:
       - "Looking for remove"
     directories:
-      source: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-fIu16W"
-      binary: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-fIu16W"
+      source: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-HSdguZ"
+      binary: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-HSdguZ"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -694,17 +694,17 @@ events:
       variable: "CMAKE_HAVE_REMOVE"
       cached: true
       stdout: |
-        Change Dir: '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-fIu16W'
+        Change Dir: '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-HSdguZ'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_971b6/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_971b6.dir/build.make CMakeFiles/cmTC_971b6.dir/build
-        gmake[1]: Entering directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-fIu16W'
-        Building C object CMakeFiles/cmTC_971b6.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove -o CMakeFiles/cmTC_971b6.dir/CheckFunctionExists.c.o -c /home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-fIu16W/CheckFunctionExists.c
-        Linking C executable cmTC_971b6
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_971b6.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove CMakeFiles/cmTC_971b6.dir/CheckFunctionExists.c.o -o cmTC_971b6 
-        gmake[1]: Leaving directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-fIu16W'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_444e9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_444e9.dir/build.make CMakeFiles/cmTC_444e9.dir/build
+        gmake[1]: Entering directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-HSdguZ'
+        Building C object CMakeFiles/cmTC_444e9.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove -o CMakeFiles/cmTC_444e9.dir/CheckFunctionExists.c.o -c /home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-HSdguZ/CheckFunctionExists.c
+        Linking C executable cmTC_444e9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_444e9.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove CMakeFiles/cmTC_444e9.dir/CheckFunctionExists.c.o -o cmTC_444e9 
+        gmake[1]: Leaving directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-HSdguZ'
         
       exitCode: 0
   -
@@ -718,8 +718,8 @@ events:
     checks:
       - "Looking for shmat"
     directories:
-      source: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-yoWBP3"
-      binary: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-yoWBP3"
+      source: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-5m7TNL"
+      binary: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-5m7TNL"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -729,17 +729,17 @@ events:
       variable: "CMAKE_HAVE_SHMAT"
       cached: true
       stdout: |
-        Change Dir: '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-yoWBP3'
+        Change Dir: '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-5m7TNL'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_866b5/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_866b5.dir/build.make CMakeFiles/cmTC_866b5.dir/build
-        gmake[1]: Entering directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-yoWBP3'
-        Building C object CMakeFiles/cmTC_866b5.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat -o CMakeFiles/cmTC_866b5.dir/CheckFunctionExists.c.o -c /home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-yoWBP3/CheckFunctionExists.c
-        Linking C executable cmTC_866b5
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_866b5.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat CMakeFiles/cmTC_866b5.dir/CheckFunctionExists.c.o -o cmTC_866b5 
-        gmake[1]: Leaving directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-yoWBP3'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_732c9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_732c9.dir/build.make CMakeFiles/cmTC_732c9.dir/build
+        gmake[1]: Entering directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-5m7TNL'
+        Building C object CMakeFiles/cmTC_732c9.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat -o CMakeFiles/cmTC_732c9.dir/CheckFunctionExists.c.o -c /home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-5m7TNL/CheckFunctionExists.c
+        Linking C executable cmTC_732c9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_732c9.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat CMakeFiles/cmTC_732c9.dir/CheckFunctionExists.c.o -o cmTC_732c9 
+        gmake[1]: Leaving directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-5m7TNL'
         
       exitCode: 0
   -
@@ -753,8 +753,8 @@ events:
     checks:
       - "Looking for IceConnectionNumber in ICE"
     directories:
-      source: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-aWcRVT"
-      binary: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-aWcRVT"
+      source: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-dtJwE1"
+      binary: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-dtJwE1"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -764,17 +764,17 @@ events:
       variable: "CMAKE_LIB_ICE_HAS_ICECONNECTIONNUMBER"
       cached: true
       stdout: |
-        Change Dir: '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-aWcRVT'
+        Change Dir: '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-dtJwE1'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f1f37/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_f1f37.dir/build.make CMakeFiles/cmTC_f1f37.dir/build
-        gmake[1]: Entering directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-aWcRVT'
-        Building C object CMakeFiles/cmTC_f1f37.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -o CMakeFiles/cmTC_f1f37.dir/CheckFunctionExists.c.o -c /home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-aWcRVT/CheckFunctionExists.c
-        Linking C executable cmTC_f1f37
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1f37.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber CMakeFiles/cmTC_f1f37.dir/CheckFunctionExists.c.o -o cmTC_f1f37  -lICE 
-        gmake[1]: Leaving directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-aWcRVT'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_755f9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_755f9.dir/build.make CMakeFiles/cmTC_755f9.dir/build
+        gmake[1]: Entering directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-dtJwE1'
+        Building C object CMakeFiles/cmTC_755f9.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -o CMakeFiles/cmTC_755f9.dir/CheckFunctionExists.c.o -c /home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-dtJwE1/CheckFunctionExists.c
+        Linking C executable cmTC_755f9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_755f9.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber CMakeFiles/cmTC_755f9.dir/CheckFunctionExists.c.o -o cmTC_755f9  -lICE 
+        gmake[1]: Leaving directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-dtJwE1'
         
       exitCode: 0
   -
@@ -788,8 +788,8 @@ events:
       - "CMakeLists.txt:13 (find_package)"
     description: "The MPI test test_mpi for C in mode normal"
     directories:
-      source: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-5zMMdv"
-      binary: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-5zMMdv"
+      source: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-kJpBmh"
+      binary: "/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-kJpBmh"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -799,17 +799,17 @@ events:
       variable: "MPI_RESULT_C_test_mpi_normal"
       cached: true
       stdout: |
-        Change Dir: '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-5zMMdv'
+        Change Dir: '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-kJpBmh'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6104f/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_6104f.dir/build.make CMakeFiles/cmTC_6104f.dir/build
-        gmake[1]: Entering directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-5zMMdv'
-        Building C object CMakeFiles/cmTC_6104f.dir/test_mpi.c.o
-        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_6104f.dir/test_mpi.c.o -c /home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-5zMMdv/test_mpi.c
-        Linking C executable cmTC_6104f
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6104f.dir/link.txt --verbose=1
-        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_6104f.dir/test_mpi.c.o -o cmTC_6104f  /usr/lib/x86_64-linux-gnu/libmpi.so 
-        gmake[1]: Leaving directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-5zMMdv'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_64240/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_64240.dir/build.make CMakeFiles/cmTC_64240.dir/build
+        gmake[1]: Entering directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-kJpBmh'
+        Building C object CMakeFiles/cmTC_64240.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_64240.dir/test_mpi.c.o -c /home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-kJpBmh/test_mpi.c
+        Linking C executable cmTC_64240
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_64240.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_64240.dir/test_mpi.c.o -o cmTC_64240  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1]: Leaving directory '/home/qiqi/geant4/Proton-therapy/build/CMakeFiles/CMakeScratch/TryCompile-kJpBmh'
         
       exitCode: 0
 ...

@@ -651,6 +651,10 @@ CMakeFiles/main.dir/main.cc.o: /home/qiqi/geant4/Proton-therapy/main.cc \
  /home/qiqi/geant4/Proton-therapy/include/DetectorConstruction.hh \
  /usr/local/include/Geant4/G4VUserDetectorConstruction.hh \
  /usr/local/include/Geant4/globals.hh \
+ /usr/local/include/Geant4/G4SystemOfUnits.hh \
+ /usr/local/include/Geant4/G4UImessenger.hh \
+ /usr/local/include/Geant4/G4UIcmdWithADoubleAndUnit.hh \
+ /usr/local/include/Geant4/G4UIcmdWithAString.hh \
  /home/qiqi/geant4/Proton-therapy/include/PhysicsList.hh \
  /usr/local/include/Geant4/G4VModularPhysicsList.hh \
  /usr/local/include/Geant4/G4VPhysicsConstructor.hh \
