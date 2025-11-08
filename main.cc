@@ -4,7 +4,7 @@
 #include "G4SteppingVerbose.hh"
 #include "G4VisExecutive.hh"
 
-// 假设这些头文件都已正确定义
+
 #include "DetectorConstruction.hh"
 #include "PhysicsList.hh"
 #include "PrimaryGenerator.hh"
@@ -14,7 +14,7 @@
 
 #include <string>
 
-// (保留，虽然目前代码中未使用，但保持完整性)
+
 bool isMacroFile(const char* filename)
 {
     std::string str(filename);
@@ -105,4 +105,5 @@ int main(int argc, char **argv)
 
     return 0;
 }
+//example:./main run.mac G4_AIR 2.0*cm gamma 1.0Mev 
 
