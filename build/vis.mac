@@ -2,8 +2,6 @@
 /vis/viewer/set/autoRefresh false
 /vis/verbose errors
 
-
-
 # 视角
 /vis/drawVolume
 /vis/viewer/set/viewpointVector -1 0 0
