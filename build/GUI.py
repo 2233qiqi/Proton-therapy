@@ -8,7 +8,7 @@ from PyQt5.QtWidgets import (QApplication, QMainWindow, QVBoxLayout, QHBoxLayout
 from PyQt5.QtCore import QProcess, QThread, pyqtSignal, Qt, QSize
 from PyQt5.QtGui import QFont, QIcon, QPalette, QColor, QTextCursor
 
-
+ 
 class SimulationThread(QThread):
     output_signal = pyqtSignal(str)
     finished_signal = pyqtSignal(int)
